@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{02425c54-d85b-4b80-b4d6-bee76946f4d7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9c3f863e-8a88-451e-9ea7-a4fad3732550}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{cb0f1f4a-c66e-43e9-a4e1-11895c81edbf}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="XTAPI">
+      <UniqueIdentifier>{237b2662-dbe4-4385-91d9-c47897ff780c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XTAPI\DropHandlerSink.cpp">
+      <Filter>XTAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="XTAPI\InstrNotifySink.cpp">
+      <Filter>XTAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfitLossDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfitLoss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XTAPI\DropHandlerSink.h">
+      <Filter>XTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="XTAPI\InstrNotifySink.h">
+      <Filter>XTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfitLossDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfitLoss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ProfitLoss.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ProfitLoss.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProfitLoss.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

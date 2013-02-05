@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{530db2fd-efda-4f7c-910e-7912eaf2dbb7}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{251809ab-db34-4ef1-be1d-2830942e5201}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c19b25b3-fb11-419b-8c6a-3e245b285bc2}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="XTAPI">
+      <UniqueIdentifier>{1f074212-bb2e-40d7-94c9-31debb1fbf35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XTAPI\InstrNotifySink.cpp">
+      <Filter>XTAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="PriceUpdateManualDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PriceUpdateManual.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XTAPI\InstrNotifySink.h">
+      <Filter>XTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="PriceUpdateManualDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PriceUpdateManual.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\PriceUpdateManual.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\PriceUpdateManual.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PriceUpdateManual.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

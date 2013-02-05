@@ -1,0 +1,244 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ModifyOrder.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ModifyOrder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TTModifyOrder_DIALOG DIALOGEX 0, 0, 265, 265
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ModifyOrder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EXCHANGEBOX,68,51,65,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Exchange:",IDC_STATIC,16,54,48,8
+    EDITTEXT        IDC_PRODUCTBOX,68,67,65,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Product:",IDC_STATIC,16,70,48,8
+    EDITTEXT        IDC_PRODTYPEBOX,68,83,65,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Product Type:",IDC_STATIC,16,86,48,8
+    EDITTEXT        IDC_CONTRACTBOX,68,99,65,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Contract:",IDC_STATIC,16,103,48,8
+    EDITTEXT        IDC_LOWPRICEBOX,201,170,51,14,ES_AUTOHSCROLL
+    RTEXT           "Low Price:",IDC_STATIC,151,174,48,8
+    EDITTEXT        IDC_HIGHPRICEBOX,201,186,51,14,ES_AUTOHSCROLL
+    RTEXT           "High Price:",IDC_STATIC,151,189,48,8
+    PUSHBUTTON      "Invoke",IDC_DELETEBUTTON,187,229,65,14,WS_DISABLED
+    GROUPBOX        "Instrument Information",IDC_GBINSTR,7,39,133,81
+    EDITTEXT        IDC_SOKBOX,68,134,65,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "SiteOrderKey:",IDC_STATIC,16,137,48,8
+    GROUPBOX        "Last Order",IDC_GBLASTORDER,7,122,133,32
+    GROUPBOX        "Modify Order",IDC_GBMODIFYORDER,7,158,133,89
+    COMBOBOX        IDC_MODIFYTYPECOMBO,15,173,117,90,CBS_DROPDOWNLIST | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NEWPRICEBOX,67,190,65,14,ES_AUTOHSCROLL
+    RTEXT           "New Price:",IDC_STATIC,15,193,48,8
+    EDITTEXT        IDC_NEWQTYBOX,67,206,65,14,ES_AUTOHSCROLL
+    RTEXT           "New Quantity:",IDC_STATIC,15,210,48,8
+    PUSHBUTTON      "Invoke",IDC_MODIFYBUTTON,67,228,65,14,WS_DISABLED
+    GROUPBOX        "Limit Order Entry",IDC_GBORDER,145,39,113,81
+    COMBOBOX        IDC_CUSTOMERCOMBO,193,53,57,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Customer:",IDC_STATIC,149,55,36,8
+    RTEXT           "Price:",IDC_STATIC,153,70,32,8
+    RTEXT           "Quantity:",IDC_STATIC,152,87,33,8
+    EDITTEXT        IDC_PRICEBOX,193,69,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_QTYBOX,193,85,58,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Sell",IDC_SELLBUTTON,204,103,47,14
+    PUSHBUTTON      "Buy",IDC_BUYBUTTON,153,103,47,14
+    GROUPBOX        "Delete Order",IDC_GBDELETEORDER,145,122,113,125
+    COMBOBOX        IDC_DELETEORDERCOMBO,152,137,100,90,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BUYSELLCOMBO,201,155,51,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Include Range",IDC_INCLUDERADIO,"Button",BS_AUTORADIOBUTTON,191,204,63,10
+    CONTROL         "Exclude Range",IDC_EXCLUDERADIO,"Button",BS_AUTORADIOBUTTON,191,216,65,10
+    EDITTEXT        IDC_STATUSBAR,7,251,251,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    CTEXT           "WARNING!",IDC_WARNING,7,7,251,16
+    CTEXT           "This sample is NOT to be used in production or during conformance testing.",IDC_STATIC,7,26,251,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "ModifyOrder MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ModifyOrder"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "ModifyOrder.EXE"
+            VALUE "ProductName", "ModifyOrder Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TTModifyOrder_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TTModifyOrder_DIALOG DLGINIT
+BEGIN
+    IDC_MODIFYTYPECOMBO, 0x403, 19, 0
+0x6553, 0x656c, 0x7463, 0x4d20, 0x646f, 0x6669, 0x2079, 0x7954, 0x6570, 
+"\000" 
+    IDC_MODIFYTYPECOMBO, 0x403, 18, 0
+0x6843, 0x6e61, 0x6567, 0x4c20, 0x7361, 0x2074, 0x724f, 0x6564, 0x0072, 
+
+    IDC_MODIFYTYPECOMBO, 0x403, 26, 0
+0x6143, 0x636e, 0x6c65, 0x522f, 0x7065, 0x616c, 0x6563, 0x4c20, 0x7361, 
+0x2074, 0x724f, 0x6564, 0x0072, 
+    IDC_DELETEORDERCOMBO, 0x403, 19, 0
+0x6553, 0x656c, 0x7463, 0x4420, 0x6c65, 0x7465, 0x2065, 0x7954, 0x6570, 
+"\000" 
+    IDC_DELETEORDERCOMBO, 0x403, 18, 0
+0x6544, 0x656c, 0x6574, 0x4c20, 0x7361, 0x2074, 0x724f, 0x6564, 0x0072, 
+
+    IDC_DELETEORDERCOMBO, 0x403, 18, 0
+0x6544, 0x656c, 0x6574, 0x4120, 0x6c6c, 0x4f20, 0x6472, 0x7265, 0x0073, 
+
+    IDC_DELETEORDERCOMBO, 0x403, 23, 0
+0x6544, 0x656c, 0x6574, 0x5220, 0x6e61, 0x6567, 0x6f20, 0x2066, 0x724f, 
+0x6564, 0x7372, "\000" 
+    IDC_BUYSELLCOMBO, 0x403, 4, 0
+0x7542, 0x0079, 
+    IDC_BUYSELLCOMBO, 0x403, 5, 0
+0x6553, 0x6c6c, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ModifyOrder.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

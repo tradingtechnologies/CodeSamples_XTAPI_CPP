@@ -1,0 +1,146 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MONITORGATEWAYS_DIALOG DIALOGEX 0, 0, 394, 361
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MonitorGateways"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CBO_AVAILABLEGATEWAYS,92,55,94,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Available Gateways",IDC_STATIC,17,56,64,8
+    GROUPBOX        "Gateway Connections",IDC_STATIC,7,40,187,100
+    CONTROL         "Open Price Server",IDC_CHK_OPENPRICE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,111,75,74,10,WS_EX_RIGHT
+    CONTROL         "Open Order Server",IDC_CHK_OPENORDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,108,89,77,10,WS_EX_RIGHT
+    CONTROL         "Open Fill Server",IDC_CHK_OPENFILL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,118,103,67,10,WS_EX_RIGHT
+    PUSHBUTTON      "Connect",IDC_BTN_CONNECT,136,119,50,14
+    GROUPBOX        "OnExchangeStateUpdate Output",IDC_STATIC,7,146,187,94
+    EDITTEXT        IDC_TXT_ONEXCHANGESTATEUPDATE,14,158,174,75,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    GROUPBOX        "OnStatusUpdate Output",IDC_STATIC,200,146,187,94
+    EDITTEXT        IDC_TXT_ONSTATUSUPDATE,207,158,174,75,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    GROUPBOX        "OnExchangeMessage Output",IDC_STATIC,7,243,380,94
+    EDITTEXT        IDC_TXT_ONEXCHANGEMESSAGE,14,255,367,75,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    GROUPBOX        "Gateway Status",IDC_STATIC,200,40,187,57
+    GROUPBOX        "X_TRADER Status",IDC_STATIC,200,99,187,41
+    LTEXT           "Price Connection:",IDC_STATIC,222,54,57,8,0,WS_EX_RIGHT
+    LTEXT           "Order Connection:",IDC_STATIC,219,67,60,8,0,WS_EX_RIGHT
+    LTEXT           "Fill Connection:",IDC_STATIC,229,80,50,8,0,WS_EX_RIGHT
+    LTEXT           "X_TRADER:",IDC_STATIC,241,113,38,8,0,WS_EX_RIGHT
+    LTEXT           "X_TRADER Pro:",IDC_STATIC,228,126,51,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_TXT_PRICECONNECTION,304,54,57,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_TXT_ORDERCONNECTION,304,67,57,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_TXT_FILLCONNECTION,304,80,57,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_TXT_XTRADER,304,113,57,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_TXT_XTRADERPRO,304,126,57,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_TXT_STATUSBAR,7,340,380,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    CTEXT           "WARNING!",IDC_WARNING,7,7,380,20
+    CTEXT           "This sample is NOT to be used in production or duing conformance testing.",IDC_STATIC,7,29,380,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MONITORGATEWAYS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 387
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 354
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "MonitorGateways.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MONITORGATEWAYS_DIALOG DLGINIT
+BEGIN
+    IDC_CBO_AVAILABLEGATEWAYS, 0x403, 23, 0
+0x2d2d, 0x5320, 0x6c65, 0x6365, 0x2074, 0x2061, 0x6147, 0x6574, 0x6177, 
+0x2079, 0x2d2d, "\000" 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

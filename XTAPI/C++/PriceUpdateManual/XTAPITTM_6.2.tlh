@@ -1,0 +1,1836 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (93455653).
+//
+// XTAPITTM_6.2.tlh
+//
+// C++ source equivalent of Win32 type library C:\tt\x_trader\xtapi\bin\XTAPITTM_6.2.DLL
+// compiler-generated file created 08/16/05 at 09:53:43 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace XTAPI {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("98b8ae23-466f-11d6-a27b-00b0d0f3cca6"))
+/* dispinterface */ _ITTGateEvents;
+struct __declspec(uuid("57cad265-5076-11d6-a27f-00b0d0f3cca6"))
+/* dual interface */ ITTInstrNotify;
+struct __declspec(uuid("98b8ae24-466f-11d6-a27b-00b0d0f3cca6"))
+/* dual interface */ ITTInstrObj;
+struct __declspec(uuid("0a35cfa4-60f4-11d6-a286-00b0d0f3cca6"))
+/* dual interface */ ITTOrderSelector;
+struct __declspec(uuid("53ef4247-66b4-11d6-a287-00b0d0f3cca6"))
+/* dual interface */ ITTOrderSet;
+struct __declspec(uuid("5bec3c58-6bf6-11d6-a28b-00b0d0f3cca6"))
+/* dual interface */ ITTOrderProfile;
+struct __declspec(uuid("0a35cf9f-60f4-11d6-a286-00b0d0f3cca6"))
+/* dual interface */ ITTOrderObj;
+struct __declspec(uuid("32a5188b-4d43-49e2-884e-d93d37842b18"))
+/* dual interface */ ITTOrderTrackerObj;
+struct __declspec(uuid("f5af1c09-76f4-11d6-a28d-00b0d0f3cca6"))
+/* dual interface */ ITTFillObj;
+struct /* coclass */ TTGate;
+struct __declspec(uuid("98b8ae21-466f-11d6-a27b-00b0d0f3cca6"))
+/* dual interface */ ITTGate;
+struct __declspec(uuid("98b8ae26-466f-11d6-a27b-00b0d0f3cca6"))
+/* dispinterface */ _ITTInstrObjEvents;
+struct __declspec(uuid("63ba2ac0-481c-11d6-a27c-00b0d0f3cca6"))
+/* dual interface */ IInstrCollection;
+struct /* coclass */ TTInstrObj;
+struct /* coclass */ InstrCollection;
+struct __declspec(uuid("57cad267-5076-11d6-a27f-00b0d0f3cca6"))
+/* dispinterface */ _ITTInstrNotifyEvents;
+struct /* coclass */ TTInstrNotify;
+struct /* coclass */ TTOrderObj;
+struct /* coclass */ TTOrderSelector;
+struct /* coclass */ TTOrderTrackerObj;
+struct __declspec(uuid("53ef4249-66b4-11d6-a287-00b0d0f3cca6"))
+/* dispinterface */ _ITTOrderSetEvents;
+struct __declspec(uuid("5bec3c4e-6bf6-11d6-a28b-00b0d0f3cca6"))
+/* dual interface */ IOrderSetCol;
+struct __declspec(uuid("5bec3c5e-6bf6-11d6-a28b-00b0d0f3cca6"))
+/* dual interface */ IOrderProfileCol;
+struct __declspec(uuid("a614cec5-9275-11d6-a29e-00b0d0f3cca6"))
+/* dual interface */ ITTHotKeyNotify;
+struct /* coclass */ TTOrderSet;
+struct /* coclass */ ServiceGate;
+struct __declspec(uuid("f90afc41-6355-11d6-a286-00b0d0f3cca6"))
+/* dual interface */ IServiceGate;
+struct /* coclass */ OrderSetCol;
+struct /* coclass */ TTOrderProfile;
+struct /* coclass */ OrderProfileCol;
+struct /* coclass */ TTFillObj;
+struct __declspec(uuid("a614cec7-9275-11d6-a29e-00b0d0f3cca6"))
+/* dispinterface */ _ITTHotKeyNotifyEvents;
+struct /* coclass */ TTHotKeyNotify;
+struct __declspec(uuid("95d3437b-d62d-11d6-a2c1-00b0d0f3cca6"))
+/* dual interface */ ITTDropHandler;
+struct __declspec(uuid("95d3437d-d62d-11d6-a2c1-00b0d0f3cca6"))
+/* dispinterface */ _ITTDropHandlerEvents;
+struct /* coclass */ TTDropHandler;
+struct __declspec(uuid("a2b6fd95-f8da-11d6-a2d5-00b0d0f3cca6"))
+/* dual interface */ IOrderLimits;
+struct /* coclass */ OrderLimits;
+struct __declspec(uuid("9f9e6630-268e-11d9-9669-0800200c9a66"))
+/* dual interface */ ITTSODObj;
+struct /* coclass */ TTSODObj;
+struct __declspec(uuid("f87cc130-268d-11d9-9669-0800200c9a66"))
+/* dual interface */ ITTSODSet;
+struct /* coclass */ TTSODSet;
+struct __declspec(uuid("aed2bb80-2475-11d9-9669-0800200c9a66"))
+/* dual interface */ ITTRiskManager;
+struct __declspec(uuid("aed2bb82-2475-11d9-9669-0800200c9a66"))
+/* dispinterface */ _ITTRiskManagerEvents;
+struct /* coclass */ TTRiskManager;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(_ITTGateEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ITTInstrNotify, __uuidof(ITTInstrNotify));
+_COM_SMARTPTR_TYPEDEF(ITTInstrObj, __uuidof(ITTInstrObj));
+_COM_SMARTPTR_TYPEDEF(ITTOrderSelector, __uuidof(ITTOrderSelector));
+_COM_SMARTPTR_TYPEDEF(ITTOrderSet, __uuidof(ITTOrderSet));
+_COM_SMARTPTR_TYPEDEF(ITTOrderProfile, __uuidof(ITTOrderProfile));
+_COM_SMARTPTR_TYPEDEF(ITTOrderObj, __uuidof(ITTOrderObj));
+_COM_SMARTPTR_TYPEDEF(ITTOrderTrackerObj, __uuidof(ITTOrderTrackerObj));
+_COM_SMARTPTR_TYPEDEF(ITTFillObj, __uuidof(ITTFillObj));
+_COM_SMARTPTR_TYPEDEF(ITTGate, __uuidof(ITTGate));
+_COM_SMARTPTR_TYPEDEF(_ITTInstrObjEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IInstrCollection, __uuidof(IInstrCollection));
+_COM_SMARTPTR_TYPEDEF(_ITTInstrNotifyEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(_ITTOrderSetEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IOrderSetCol, __uuidof(IOrderSetCol));
+_COM_SMARTPTR_TYPEDEF(IOrderProfileCol, __uuidof(IOrderProfileCol));
+_COM_SMARTPTR_TYPEDEF(ITTHotKeyNotify, __uuidof(ITTHotKeyNotify));
+_COM_SMARTPTR_TYPEDEF(IServiceGate, __uuidof(IServiceGate));
+_COM_SMARTPTR_TYPEDEF(_ITTHotKeyNotifyEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(ITTDropHandler, __uuidof(ITTDropHandler));
+_COM_SMARTPTR_TYPEDEF(_ITTDropHandlerEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IOrderLimits, __uuidof(IOrderLimits));
+_COM_SMARTPTR_TYPEDEF(ITTSODObj, __uuidof(ITTSODObj));
+_COM_SMARTPTR_TYPEDEF(ITTSODSet, __uuidof(ITTSODSet));
+_COM_SMARTPTR_TYPEDEF(ITTRiskManager, __uuidof(ITTRiskManager));
+_COM_SMARTPTR_TYPEDEF(_ITTRiskManagerEvents, __uuidof(IDispatch));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("98b8ae23-466f-11d6-a27b-00b0d0f3cca6"))
+_ITTGateEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnStatusUpdate (
+        long lHintMask,
+        _bstr_t sText );
+    HRESULT OnExchangeStateUpdate (
+        _bstr_t sExchange,
+        _bstr_t sText,
+        long bOpenned,
+        long bServerUp );
+    HRESULT OnExchangeMessage (
+        _bstr_t sExchange,
+        _bstr_t sTimeStamp,
+        _bstr_t sInfo,
+        _bstr_t sText );
+};
+
+struct __declspec(uuid("57cad265-5076-11d6-a27f-00b0d0f3cca6"))
+ITTInstrNotify : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetInstrument))
+    ITTInstrObjPtr Instrument;
+    __declspec(property(get=GetUpdateFilter,put=PutUpdateFilter))
+    _bstr_t UpdateFilter;
+    __declspec(property(get=GetEnablePriceUpdates,put=PutEnablePriceUpdates))
+    long EnablePriceUpdates;
+    __declspec(property(get=GetEnableDepthUpdates,put=PutEnableDepthUpdates))
+    long EnableDepthUpdates;
+    __declspec(property(get=GetDebugLogLevel,put=PutDebugLogLevel))
+    long DebugLogLevel;
+    __declspec(property(get=GetInstrFilter,put=PutInstrFilter))
+    _bstr_t InstrFilter[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ITTInstrObjPtr GetInstrument ( );
+    _bstr_t GetUpdateFilter ( );
+    void PutUpdateFilter (
+        _bstr_t pVal );
+    long GetEnablePriceUpdates ( );
+    void PutEnablePriceUpdates (
+        long pVal );
+    long GetEnableDepthUpdates ( );
+    void PutEnableDepthUpdates (
+        long pVal );
+    HRESULT AttachInstrument (
+        struct ITTInstrObj * pInstrObj );
+    HRESULT DetachInstrument (
+        struct ITTInstrObj * pInstrObj );
+    long GetDebugLogLevel ( );
+    void PutDebugLogLevel (
+        long pVal );
+    _bstr_t GetInstrFilter (
+        struct ITTInstrObj * pInstr );
+    void PutInstrFilter (
+        struct ITTInstrObj * pInstr,
+        _bstr_t pVal );
+    HRESULT AttachOrderSet (
+        struct ITTOrderSet * pOrderSet );
+    HRESULT DetachOrderSet (
+        struct ITTOrderSet * pOrderSet );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Instrument (
+        struct ITTInstrObj * * pVal ) = 0;
+    virtual HRESULT __stdcall get_UpdateFilter (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_UpdateFilter (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_EnablePriceUpdates (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnablePriceUpdates (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_EnableDepthUpdates (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableDepthUpdates (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_AttachInstrument (
+        struct ITTInstrObj * pInstrObj ) = 0;
+    virtual HRESULT __stdcall raw_DetachInstrument (
+        struct ITTInstrObj * pInstrObj ) = 0;
+    virtual HRESULT __stdcall get_DebugLogLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DebugLogLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_InstrFilter (
+        struct ITTInstrObj * pInstr,
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_InstrFilter (
+        struct ITTInstrObj * pInstr,
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_AttachOrderSet (
+        struct ITTOrderSet * pOrderSet ) = 0;
+    virtual HRESULT __stdcall raw_DetachOrderSet (
+        struct ITTOrderSet * pOrderSet ) = 0;
+};
+
+struct __declspec(uuid("98b8ae24-466f-11d6-a27b-00b0d0f3cca6"))
+ITTInstrObj : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAlias,put=PutAlias))
+    _bstr_t Alias;
+    __declspec(property(get=GetExchange,put=PutExchange))
+    _bstr_t Exchange;
+    __declspec(property(get=GetProduct,put=PutProduct))
+    _bstr_t Product;
+    __declspec(property(get=GetProdType,put=PutProdType))
+    _bstr_t ProdType;
+    __declspec(property(get=GetContract,put=PutContract))
+    _bstr_t Contract;
+    __declspec(property(get=GetSeriesKey,put=PutSeriesKey))
+    _bstr_t SeriesKey;
+    __declspec(property(get=GetGet))
+    _variant_t Get[];
+    __declspec(property(get=GetCreateNotifyObject))
+    ITTInstrNotifyPtr CreateNotifyObject;
+    __declspec(property(get=GetReadProperties))
+    _variant_t ReadProperties[];
+    __declspec(property(get=GetCreateOrderSelector))
+    ITTOrderSelectorPtr CreateOrderSelector;
+    __declspec(property(get=GetDebugLogLevel,put=PutDebugLogLevel))
+    long DebugLogLevel;
+    __declspec(property(get=GetOrderSet,put=PutOrderSet))
+    ITTOrderSetPtr OrderSet;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetAlias ( );
+    void PutAlias (
+        _bstr_t pVal );
+    _bstr_t GetExchange ( );
+    void PutExchange (
+        _bstr_t pVal );
+    _bstr_t GetProduct ( );
+    void PutProduct (
+        _bstr_t pVal );
+    _bstr_t GetProdType ( );
+    void PutProdType (
+        _bstr_t pVal );
+    _bstr_t GetContract ( );
+    void PutContract (
+        _bstr_t pVal );
+    _bstr_t GetSeriesKey ( );
+    void PutSeriesKey (
+        _bstr_t pVal );
+    HRESULT Open (
+        long bDepth );
+    _variant_t GetGet (
+        const _variant_t & vKey );
+    ITTInstrNotifyPtr GetCreateNotifyObject ( );
+    _variant_t GetReadProperties (
+        _bstr_t sKey );
+    ITTOrderSelectorPtr GetCreateOrderSelector ( );
+    long GetDebugLogLevel ( );
+    void PutDebugLogLevel (
+        long pVal );
+    _variant_t GetTickPrice (
+        const _variant_t & vValue,
+        long lTickOffset,
+        _bstr_t sOutType );
+    ITTOrderSetPtr GetOrderSet ( );
+    void PutOrderSet (
+        struct ITTOrderSet * pVal );
+    HRESULT Retrieve ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Alias (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Alias (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Exchange (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Exchange (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Product (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Product (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_ProdType (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_ProdType (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Contract (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Contract (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SeriesKey (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_SeriesKey (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_Open (
+        long bDepth ) = 0;
+    virtual HRESULT __stdcall get_Get (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_CreateNotifyObject (
+        struct ITTInstrNotify * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReadProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_CreateOrderSelector (
+        struct ITTOrderSelector * * pVal ) = 0;
+    virtual HRESULT __stdcall get_DebugLogLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DebugLogLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_TickPrice (
+        VARIANT vValue,
+        long lTickOffset,
+        BSTR sOutType,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_OrderSet (
+        struct ITTOrderSet * * pVal ) = 0;
+    virtual HRESULT __stdcall put_OrderSet (
+        struct ITTOrderSet * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Retrieve ( ) = 0;
+};
+
+struct __declspec(uuid("0a35cfa4-60f4-11d6-a286-00b0d0f3cca6"))
+ITTOrderSelector : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetAllowAnyMatches,put=PutAllowAnyMatches))
+    long AllowAnyMatches;
+    __declspec(property(get=GetAllMatchesRequired,put=PutAllMatchesRequired))
+    long AllMatchesRequired;
+    __declspec(property(get=GetTestMatch))
+    long TestMatch[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetAllowAnyMatches ( );
+    void PutAllowAnyMatches (
+        long pVal );
+    long GetAllMatchesRequired ( );
+    void PutAllMatchesRequired (
+        long pVal );
+    HRESULT Reset ( );
+    HRESULT AddTest (
+        LPSTR lpProperty,
+        const _variant_t & vValue );
+    HRESULT AddSelector (
+        struct ITTOrderSelector * pSelector );
+    HRESULT InvertTest ( );
+    long GetTestMatch (
+        IUnknown * pOrderOrFill );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_AllowAnyMatches (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_AllowAnyMatches (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_AllMatchesRequired (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_AllMatchesRequired (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+    virtual HRESULT __stdcall raw_AddTest (
+        LPSTR lpProperty,
+        VARIANT vValue ) = 0;
+    virtual HRESULT __stdcall raw_AddSelector (
+        struct ITTOrderSelector * pSelector ) = 0;
+    virtual HRESULT __stdcall raw_InvertTest ( ) = 0;
+    virtual HRESULT __stdcall get_TestMatch (
+        IUnknown * pOrderOrFill,
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("53ef4247-66b4-11d6-a287-00b0d0f3cca6"))
+ITTOrderSet : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetOrderSelector,put=PutOrderSelector))
+    ITTOrderSelectorPtr OrderSelector;
+    __declspec(property(get=GetGet))
+    _variant_t Get[];
+    __declspec(property(get=GetAlias,put=PutAlias))
+    _bstr_t Alias;
+    __declspec(property(get=GetSendOrder))
+    long SendOrder[];
+    __declspec(property(get=GetReadProperties))
+    _variant_t ReadProperties[];
+    __declspec(property(get=GetWriteProperties))
+    _variant_t WriteProperties[];
+    __declspec(property(get=GetEnableOrderSetUpdates,put=PutEnableOrderSetUpdates))
+    long EnableOrderSetUpdates;
+    __declspec(property(get=GetEnableOrderFillData,put=PutEnableOrderFillData))
+    long EnableOrderFillData;
+    __declspec(property(get=GetEnableOrderSend,put=PutEnableOrderSend))
+    long EnableOrderSend;
+    __declspec(property(get=GetDeleteOrders))
+    long DeleteOrders[][][][][];
+    __declspec(property(get=GetDeleteContracts))
+    long DeleteContracts[][][][][][];
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+    __declspec(property(get=GetEnableOrderAutoDelete,put=PutEnableOrderAutoDelete))
+    long EnableOrderAutoDelete;
+    __declspec(property(get=GetQuotingOrderProfile,put=PutQuotingOrderProfile))
+    ITTOrderProfilePtr QuotingOrderProfile;
+    __declspec(property(get=GetDebugLogLevel,put=PutDebugLogLevel))
+    long DebugLogLevel;
+    __declspec(property(get=GetQuoteWithCancelReplace,put=PutQuoteWithCancelReplace))
+    long QuoteWithCancelReplace;
+    __declspec(property(get=GetCreateOrderSelector))
+    ITTOrderSelectorPtr CreateOrderSelector;
+    __declspec(property(get=GetSiteKeyLookup))
+    _variant_t SiteKeyLookup[];
+    __declspec(property(get=GetEnableOrderUpdateData,put=PutEnableOrderUpdateData))
+    long EnableOrderUpdateData;
+    __declspec(property(get=GetNextOrderTracker))
+    ITTOrderTrackerObjPtr NextOrderTracker;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+    HRESULT Open (
+        const _variant_t & bEnableOrderSend = vtMissing );
+    ITTOrderSelectorPtr GetOrderSelector ( );
+    void PutOrderSelector (
+        struct ITTOrderSelector * pVal );
+    HRESULT Close ( );
+    _variant_t GetGet (
+        const _variant_t & vKey );
+    _bstr_t GetAlias ( );
+    void PutAlias (
+        _bstr_t pVal );
+    long GetSendOrder (
+        struct ITTOrderProfile * pOrderProfile );
+    HRESULT Set (
+        const _variant_t & vKey,
+        const _variant_t & newVal );
+    _variant_t GetReadProperties (
+        _bstr_t sKey );
+    _variant_t GetWriteProperties (
+        _bstr_t sKey );
+    long GetEnableOrderSetUpdates ( );
+    void PutEnableOrderSetUpdates (
+        long pVal );
+    long GetEnableOrderFillData ( );
+    void PutEnableOrderFillData (
+        long pVal );
+    long GetEnableOrderSend ( );
+    void PutEnableOrderSend (
+        long pVal );
+    long GetDeleteOrders (
+        const _variant_t & bBuySell,
+        const _variant_t & vLowTicks,
+        const _variant_t & vHighTicks,
+        long bInclusiveRange,
+        struct ITTOrderSelector * pSelector );
+    long GetDeleteContracts (
+        long bBuySell,
+        long lMinDeleteQty,
+        const _variant_t & vLowTicks,
+        const _variant_t & vHighTicks,
+        struct ITTOrderSelector * pSelector,
+        long bInsideOut );
+    HRESULT SetValidExchanges (
+        _bstr_t sExchangeList,
+        long bOrders,
+        long bFills );
+    HRESULT UpdateOrder (
+        struct ITTOrderProfile * pOrderProfile,
+        long bCancelReplace );
+    HRESULT HoldOrder (
+        struct ITTOrderObj * pOrderObj,
+        long bHoldOrder );
+    long GetEnableOrderAutoDelete ( );
+    void PutEnableOrderAutoDelete (
+        long pVal );
+    HRESULT OpenQuoting (
+        struct ITTOrderProfile * pOrderProfile,
+        long bEnableOrderAutoDelete );
+    ITTOrderProfilePtr GetQuotingOrderProfile ( );
+    void PutQuotingOrderProfile (
+        struct ITTOrderProfile * pVal );
+    HRESULT UpdateQuote ( );
+    long GetDebugLogLevel ( );
+    void PutDebugLogLevel (
+        long pVal );
+    HRESULT ClearQuotePosition (
+        long bNet,
+        long bBuys,
+        long bSells );
+    long GetQuoteWithCancelReplace ( );
+    void PutQuoteWithCancelReplace (
+        long pVal );
+    ITTOrderSelectorPtr GetCreateOrderSelector ( );
+    _variant_t GetSiteKeyLookup (
+        LPSTR sSiteKey );
+    long GetEnableOrderUpdateData ( );
+    void PutEnableOrderUpdateData (
+        long pVal );
+    ITTOrderTrackerObjPtr GetNextOrderTracker ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Open (
+        VARIANT bEnableOrderSend = vtMissing ) = 0;
+    virtual HRESULT __stdcall get_OrderSelector (
+        struct ITTOrderSelector * * pVal ) = 0;
+    virtual HRESULT __stdcall put_OrderSelector (
+        struct ITTOrderSelector * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Close ( ) = 0;
+    virtual HRESULT __stdcall get_Get (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Alias (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Alias (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_SendOrder (
+        struct ITTOrderProfile * pOrderProfile,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Set (
+        VARIANT vKey,
+        VARIANT newVal ) = 0;
+    virtual HRESULT __stdcall get_ReadProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_WriteProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_EnableOrderSetUpdates (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableOrderSetUpdates (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_EnableOrderFillData (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableOrderFillData (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_EnableOrderSend (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableOrderSend (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_DeleteOrders (
+        VARIANT bBuySell,
+        VARIANT vLowTicks,
+        VARIANT vHighTicks,
+        long bInclusiveRange,
+        struct ITTOrderSelector * pSelector,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_DeleteContracts (
+        long bBuySell,
+        long lMinDeleteQty,
+        VARIANT vLowTicks,
+        VARIANT vHighTicks,
+        struct ITTOrderSelector * pSelector,
+        long bInsideOut,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_SetValidExchanges (
+        BSTR sExchangeList,
+        long bOrders,
+        long bFills ) = 0;
+    virtual HRESULT __stdcall raw_UpdateOrder (
+        struct ITTOrderProfile * pOrderProfile,
+        long bCancelReplace ) = 0;
+    virtual HRESULT __stdcall raw_HoldOrder (
+        struct ITTOrderObj * pOrderObj,
+        long bHoldOrder ) = 0;
+    virtual HRESULT __stdcall get_EnableOrderAutoDelete (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableOrderAutoDelete (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_OpenQuoting (
+        struct ITTOrderProfile * pOrderProfile,
+        long bEnableOrderAutoDelete ) = 0;
+    virtual HRESULT __stdcall get_QuotingOrderProfile (
+        struct ITTOrderProfile * * pVal ) = 0;
+    virtual HRESULT __stdcall put_QuotingOrderProfile (
+        struct ITTOrderProfile * pVal ) = 0;
+    virtual HRESULT __stdcall raw_UpdateQuote ( ) = 0;
+    virtual HRESULT __stdcall get_DebugLogLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DebugLogLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_ClearQuotePosition (
+        long bNet,
+        long bBuys,
+        long bSells ) = 0;
+    virtual HRESULT __stdcall get_QuoteWithCancelReplace (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_QuoteWithCancelReplace (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_CreateOrderSelector (
+        struct ITTOrderSelector * * pVal ) = 0;
+    virtual HRESULT __stdcall get_SiteKeyLookup (
+        LPSTR sSiteKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_EnableOrderUpdateData (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableOrderUpdateData (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_NextOrderTracker (
+        struct ITTOrderTrackerObj * * pVal ) = 0;
+};
+
+struct __declspec(uuid("5bec3c58-6bf6-11d6-a28b-00b0d0f3cca6"))
+ITTOrderProfile : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetInstrument,put=PutInstrument))
+    ITTInstrObjPtr Instrument;
+    __declspec(property(get=GetCustomer,put=PutCustomer))
+    _bstr_t Customer;
+    __declspec(property(get=GetAlias,put=PutAlias))
+    _bstr_t Alias;
+    __declspec(property(get=GetGet))
+    _variant_t Get[];
+    __declspec(property(get=GetReadProperties))
+    _variant_t ReadProperties[];
+    __declspec(property(get=GetWriteProperties))
+    _variant_t WriteProperties[];
+    __declspec(property(get=GetCustomers))
+    _variant_t Customers;
+    __declspec(property(get=GetGetLast))
+    _variant_t GetLast[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ITTInstrObjPtr GetInstrument ( );
+    void PutInstrument (
+        struct ITTInstrObj * pVal );
+    _bstr_t GetCustomer ( );
+    void PutCustomer (
+        _bstr_t pVal );
+    _bstr_t GetAlias ( );
+    void PutAlias (
+        _bstr_t pVal );
+    HRESULT Set (
+        const _variant_t & vKey,
+        const _variant_t & newVal );
+    _variant_t GetGet (
+        const _variant_t & vKey );
+    _variant_t GetReadProperties (
+        _bstr_t sKey );
+    _variant_t GetWriteProperties (
+        _bstr_t sKey );
+    _variant_t GetCustomers ( );
+    _variant_t GetGetLast (
+        const _variant_t & vKey );
+    ITTOrderObjPtr GetLastOrder ( );
+    void PutRoundOption (
+        long * pVal );
+    long GetRoundOption ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Instrument (
+        struct ITTInstrObj * * pVal ) = 0;
+    virtual HRESULT __stdcall put_Instrument (
+        struct ITTInstrObj * pVal ) = 0;
+    virtual HRESULT __stdcall get_Customer (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Customer (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall get_Alias (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_Alias (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall raw_Set (
+        VARIANT vKey,
+        VARIANT newVal ) = 0;
+    virtual HRESULT __stdcall get_Get (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReadProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_WriteProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Customers (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_GetLast (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetLastOrder (
+        struct ITTOrderObj * * pVal ) = 0;
+    virtual HRESULT __stdcall put_RoundOption (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_RoundOption (
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("0a35cf9f-60f4-11d6-a286-00b0d0f3cca6"))
+ITTOrderObj : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGet))
+    _variant_t Get[];
+    __declspec(property(get=GetDelete))
+    long Delete;
+    __declspec(property(get=GetCreateOrderProfile))
+    ITTOrderProfilePtr CreateOrderProfile;
+    __declspec(property(get=GetReadProperties))
+    _variant_t ReadProperties[];
+    __declspec(property(get=GetInstrument))
+    IDispatchPtr Instrument;
+    __declspec(property(get=GetIsNull))
+    long IsNull;
+    __declspec(property(get=GetNextOrder))
+    ITTOrderObjPtr NextOrder;
+    __declspec(property(get=GetHasNextOrder))
+    long HasNextOrder;
+    __declspec(property(get=GetGetChanged))
+    _variant_t GetChanged[];
+    __declspec(property(get=GetGetIsChanged))
+    _variant_t GetIsChanged[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetGet (
+        const _variant_t & vKey );
+    long GetDelete ( );
+    ITTOrderProfilePtr GetCreateOrderProfile ( );
+    _variant_t GetReadProperties (
+        _bstr_t sKey );
+    HRESULT HoldOrder ( );
+    IDispatchPtr GetInstrument ( );
+    long GetIsNull ( );
+    ITTOrderObjPtr GetNextOrder ( );
+    long GetHasNextOrder ( );
+    _variant_t GetGetChanged (
+        const _variant_t & vKey );
+    _variant_t GetGetIsChanged (
+        const _variant_t & vKey );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Get (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Delete (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_CreateOrderProfile (
+        struct ITTOrderProfile * * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReadProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall raw_HoldOrder ( ) = 0;
+    virtual HRESULT __stdcall get_Instrument (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall get_IsNull (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_NextOrder (
+        struct ITTOrderObj * * pVal ) = 0;
+    virtual HRESULT __stdcall get_HasNextOrder (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_GetChanged (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_GetIsChanged (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("32a5188b-4d43-49e2-884e-d93d37842b18"))
+ITTOrderTrackerObj : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetOldOrder))
+    ITTOrderObjPtr OldOrder;
+    __declspec(property(get=GetNewOrder))
+    ITTOrderObjPtr NewOrder;
+    __declspec(property(get=GetHasOldOrder))
+    long HasOldOrder;
+    __declspec(property(get=GetHasNewOrder))
+    long HasNewOrder;
+    __declspec(property(get=GetGetChanged))
+    _variant_t GetChanged[];
+    __declspec(property(get=GetGetIsChanged))
+    _variant_t GetIsChanged[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    ITTOrderObjPtr GetOldOrder ( );
+    ITTOrderObjPtr GetNewOrder ( );
+    long GetHasOldOrder ( );
+    long GetHasNewOrder ( );
+    _variant_t GetGetChanged (
+        const _variant_t & vKey );
+    _variant_t GetGetIsChanged (
+        const _variant_t & vKey );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_OldOrder (
+        struct ITTOrderObj * * pVal ) = 0;
+    virtual HRESULT __stdcall get_NewOrder (
+        struct ITTOrderObj * * pVal ) = 0;
+    virtual HRESULT __stdcall get_HasOldOrder (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_HasNewOrder (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_GetChanged (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_GetIsChanged (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+};
+
+struct __declspec(uuid("f5af1c09-76f4-11d6-a28d-00b0d0f3cca6"))
+ITTFillObj : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetReadProperties))
+    _variant_t ReadProperties[];
+    __declspec(property(get=GetInstrument))
+    IDispatchPtr Instrument;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetGet (
+        const _variant_t & vKey );
+    _variant_t GetReadProperties (
+        _bstr_t sKey );
+    IDispatchPtr GetInstrument ( );
+    HRESULT Confirm (
+        _bstr_t sAccount );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Get (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReadProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Instrument (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Confirm (
+        BSTR sAccount ) = 0;
+};
+
+struct __declspec(uuid("98b8ae22-466f-11d6-a27b-00b0d0f3cca6"))
+TTGate;
+    // [ default ] interface ITTGate
+    // [ default, source ] dispinterface _ITTGateEvents
+
+struct __declspec(uuid("98b8ae21-466f-11d6-a27b-00b0d0f3cca6"))
+ITTGate : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetInstruments))
+    IDispatchPtr Instruments;
+    __declspec(property(get=GetInstrData))
+    _variant_t InstrData[][];
+    __declspec(property(get=GetOrderSets))
+    IDispatchPtr OrderSets;
+    __declspec(property(get=GetOrderProfiles))
+    IDispatchPtr OrderProfiles;
+    __declspec(property(get=GetOrderSetData))
+    _variant_t OrderSetData[][];
+    __declspec(property(get=GetEnableOrderSend,put=PutEnableOrderSend))
+    long EnableOrderSend;
+    __declspec(property(get=GetDebugLogLevel,put=PutDebugLogLevel))
+    long DebugLogLevel;
+    __declspec(property(get=GetCustomers))
+    _variant_t Customers;
+    __declspec(property(get=GetDebugAppInfo))
+    _bstr_t DebugAppInfo;
+    __declspec(property(get=GetRapidFillDelivery,put=PutRapidFillDelivery))
+    long RapidFillDelivery;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IDispatchPtr GetInstruments ( );
+    _variant_t GetInstrData (
+        _bstr_t vAlias,
+        const _variant_t & vKey );
+    IDispatchPtr GetOrderSets ( );
+    IDispatchPtr GetOrderProfiles ( );
+    HRESULT OpenExchangeOrders (
+        _bstr_t sExchangeList );
+    _variant_t GetOrderSetData (
+        _bstr_t vAlias,
+        const _variant_t & vKey );
+    long GetEnableOrderSend ( );
+    void PutEnableOrderSend (
+        long pVal );
+    long GetDebugLogLevel ( );
+    void PutDebugLogLevel (
+        long pVal );
+    _variant_t GetCustomers ( );
+    HRESULT XTAPITerminate ( );
+    _bstr_t GetDebugAppInfo ( );
+    HRESULT EnableServerMode ( );
+    HRESULT SetExchangeLogon (
+        _bstr_t sExchange,
+        _bstr_t sMember,
+        _bstr_t sGroup,
+        _bstr_t sTrader,
+        _bstr_t sPassword,
+        _bstr_t sClearMbr,
+        _bstr_t sDefAcct,
+        _bstr_t sHandOffGroup,
+        _bstr_t sHandOffMember,
+        _bstr_t sHandOffTrader );
+    HRESULT OpenExchangeFills (
+        _bstr_t sExchangeList );
+    HRESULT OpenExchangePrices (
+        _bstr_t sExchangeList );
+    _bstr_t GetPrimaryCurrency ( );
+    double GetExchangeRate (
+        _bstr_t fromCurrency,
+        _bstr_t toCurrency );
+    HRESULT DestroyDownloadedFills (
+        _bstr_t sExchangeList );
+    HRESULT SetExchangeLogonEx (
+        _bstr_t sExchange,
+        _bstr_t sMember,
+        _bstr_t sGroup,
+        _bstr_t sTrader,
+        _bstr_t sPassword,
+        _bstr_t sClearMbr,
+        _bstr_t sDefAcct,
+        _bstr_t sHandOffGroup,
+        _bstr_t sHandOffMember,
+        _bstr_t sHandOffTrader,
+        _bstr_t sPreferredServerIP );
+    long GetRapidFillDelivery ( );
+    void PutRapidFillDelivery (
+        long pVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Instruments (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall get_InstrData (
+        BSTR vAlias,
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_OrderSets (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall get_OrderProfiles (
+        IDispatch * * pVal ) = 0;
+    virtual HRESULT __stdcall raw_OpenExchangeOrders (
+        BSTR sExchangeList ) = 0;
+    virtual HRESULT __stdcall get_OrderSetData (
+        BSTR vAlias,
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_EnableOrderSend (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_EnableOrderSend (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_DebugLogLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DebugLogLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_Customers (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall raw_XTAPITerminate ( ) = 0;
+    virtual HRESULT __stdcall get_DebugAppInfo (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_EnableServerMode ( ) = 0;
+    virtual HRESULT __stdcall raw_SetExchangeLogon (
+        BSTR sExchange,
+        BSTR sMember,
+        BSTR sGroup,
+        BSTR sTrader,
+        BSTR sPassword,
+        BSTR sClearMbr,
+        BSTR sDefAcct,
+        BSTR sHandOffGroup,
+        BSTR sHandOffMember,
+        BSTR sHandOffTrader ) = 0;
+    virtual HRESULT __stdcall raw_OpenExchangeFills (
+        BSTR sExchangeList ) = 0;
+    virtual HRESULT __stdcall raw_OpenExchangePrices (
+        BSTR sExchangeList ) = 0;
+    virtual HRESULT __stdcall raw_GetPrimaryCurrency (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall raw_GetExchangeRate (
+        BSTR fromCurrency,
+        BSTR toCurrency,
+        double * pVal ) = 0;
+    virtual HRESULT __stdcall raw_DestroyDownloadedFills (
+        BSTR sExchangeList ) = 0;
+    virtual HRESULT __stdcall raw_SetExchangeLogonEx (
+        BSTR sExchange,
+        BSTR sMember,
+        BSTR sGroup,
+        BSTR sTrader,
+        BSTR sPassword,
+        BSTR sClearMbr,
+        BSTR sDefAcct,
+        BSTR sHandOffGroup,
+        BSTR sHandOffMember,
+        BSTR sHandOffTrader,
+        BSTR sPreferredServerIP ) = 0;
+    virtual HRESULT __stdcall get_RapidFillDelivery (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_RapidFillDelivery (
+        long pVal ) = 0;
+};
+
+struct __declspec(uuid("98b8ae26-466f-11d6-a27b-00b0d0f3cca6"))
+_ITTInstrObjEvents : IDispatch
+{};
+
+struct __declspec(uuid("63ba2ac0-481c-11d6-a27c-00b0d0f3cca6"))
+IInstrCollection : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("98b8ae25-466f-11d6-a27b-00b0d0f3cca6"))
+TTInstrObj;
+    // [ default ] interface ITTInstrObj
+    // [ default, source ] dispinterface _ITTInstrObjEvents
+
+struct __declspec(uuid("63ba2ac1-481c-11d6-a27c-00b0d0f3cca6"))
+InstrCollection;
+    // [ default ] interface IInstrCollection
+
+struct __declspec(uuid("57cad267-5076-11d6-a27f-00b0d0f3cca6"))
+_ITTInstrNotifyEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnNotifyFound (
+        struct ITTInstrNotify * pNotify,
+        struct ITTInstrObj * pInstr );
+    HRESULT OnNotifyUpdate (
+        struct ITTInstrNotify * pNotify,
+        struct ITTInstrObj * pInstr );
+    HRESULT OnNotifyDepthData (
+        struct ITTInstrNotify * pNotify,
+        struct ITTInstrObj * pInstr );
+    HRESULT OnOrderSetUpdate (
+        struct ITTInstrNotify * pNotify,
+        struct ITTInstrObj * pInstr,
+        struct ITTOrderSet * pOrderSet );
+};
+
+struct __declspec(uuid("57cad266-5076-11d6-a27f-00b0d0f3cca6"))
+TTInstrNotify;
+    // [ default ] interface ITTInstrNotify
+    // [ default, source ] dispinterface _ITTInstrNotifyEvents
+
+struct __declspec(uuid("0a35cfa0-60f4-11d6-a286-00b0d0f3cca6"))
+TTOrderObj;
+    // [ default ] interface ITTOrderObj
+
+struct __declspec(uuid("0a35cfa5-60f4-11d6-a286-00b0d0f3cca6"))
+TTOrderSelector;
+    // [ default ] interface ITTOrderSelector
+
+struct __declspec(uuid("5490f5c3-e404-4b1c-9b96-293560f0ea88"))
+TTOrderTrackerObj;
+    // [ default ] interface ITTOrderTrackerObj
+
+struct __declspec(uuid("53ef4249-66b4-11d6-a287-00b0d0f3cca6"))
+_ITTOrderSetEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnOrderSetUpdate (
+        struct ITTOrderSet * pOrderSet );
+    HRESULT OnOrderFillData (
+        struct ITTFillObj * pFillObj );
+    HRESULT OnOrderFillBlockStart ( );
+    HRESULT OnOrderFillBlockEnd ( );
+};
+
+struct __declspec(uuid("5bec3c4e-6bf6-11d6-a28b-00b0d0f3cca6"))
+IOrderSetCol : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("5bec3c5e-6bf6-11d6-a28b-00b0d0f3cca6"))
+IOrderProfileCol : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("a614cec5-9275-11d6-a29e-00b0d0f3cca6"))
+ITTHotKeyNotify : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT AddHotKey (
+        _bstr_t sName,
+        _bstr_t sKey,
+        int iMode );
+    HRESULT DelHotKey (
+        _bstr_t sName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_AddHotKey (
+        BSTR sName,
+        BSTR sKey,
+        int iMode ) = 0;
+    virtual HRESULT __stdcall raw_DelHotKey (
+        BSTR sName ) = 0;
+};
+
+struct __declspec(uuid("53ef4248-66b4-11d6-a287-00b0d0f3cca6"))
+TTOrderSet;
+    // [ default ] interface ITTOrderSet
+    // [ default, source ] dispinterface _ITTOrderSetEvents
+
+struct __declspec(uuid("f90afc42-6355-11d6-a286-00b0d0f3cca6"))
+ServiceGate;
+    // [ default ] interface IServiceGate
+
+struct __declspec(uuid("f90afc41-6355-11d6-a286-00b0d0f3cca6"))
+IServiceGate : IDispatch
+{};
+
+struct __declspec(uuid("5bec3c4f-6bf6-11d6-a28b-00b0d0f3cca6"))
+OrderSetCol;
+    // [ default ] interface IOrderSetCol
+
+struct __declspec(uuid("5bec3c59-6bf6-11d6-a28b-00b0d0f3cca6"))
+TTOrderProfile;
+    // [ default ] interface ITTOrderProfile
+
+struct __declspec(uuid("5bec3c5f-6bf6-11d6-a28b-00b0d0f3cca6"))
+OrderProfileCol;
+    // [ default ] interface IOrderProfileCol
+
+struct __declspec(uuid("f5af1c0a-76f4-11d6-a28d-00b0d0f3cca6"))
+TTFillObj;
+    // [ default ] interface ITTFillObj
+
+struct __declspec(uuid("a614cec7-9275-11d6-a29e-00b0d0f3cca6"))
+_ITTHotKeyNotifyEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnHotKey (
+        _bstr_t sName );
+};
+
+struct __declspec(uuid("a614cec6-9275-11d6-a29e-00b0d0f3cca6"))
+TTHotKeyNotify;
+    // [ default ] interface ITTHotKeyNotify
+    // [ default, source ] dispinterface _ITTHotKeyNotifyEvents
+
+struct __declspec(uuid("95d3437b-d62d-11d6-a2c1-00b0d0f3cca6"))
+ITTDropHandler : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetDropX))
+    long DropX;
+    __declspec(property(get=GetDropY))
+    long DropY;
+    __declspec(property(get=GetDropEffect))
+    long DropEffect;
+    __declspec(property(get=GetDropKeyState))
+    long DropKeyState;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    _variant_t GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+    HRESULT RegisterDropWindow (
+        int hWnd );
+    HRESULT Reset ( );
+    long GetDropX ( );
+    long GetDropY ( );
+    long GetDropEffect ( );
+    long GetDropKeyState ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall raw_RegisterDropWindow (
+        int hWnd ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+    virtual HRESULT __stdcall get_DropX (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_DropY (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_DropEffect (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_DropKeyState (
+        long * pVal ) = 0;
+};
+
+struct __declspec(uuid("95d3437d-d62d-11d6-a2c1-00b0d0f3cca6"))
+_ITTDropHandlerEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnNotifyDrop ( );
+};
+
+struct __declspec(uuid("95d3437c-d62d-11d6-a2c1-00b0d0f3cca6"))
+TTDropHandler;
+    // [ default ] interface ITTDropHandler
+    // [ default, source ] dispinterface _ITTDropHandlerEvents
+
+struct __declspec(uuid("a2b6fd95-f8da-11d6-a2d5-00b0d0f3cca6"))
+IOrderLimits : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetEnable,put=PutEnable))
+    long Enable;
+    __declspec(property(get=GetTestOrderSet))
+    ITTOrderSetPtr TestOrderSet[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT SetTest (
+        const _variant_t & vKey,
+        struct ITTOrderSelector * pSelector );
+    HRESULT SetTestMaxQty (
+        const _variant_t & vKey,
+        long lMaxQty,
+        long lOverRide );
+    long GetEnable ( );
+    void PutEnable (
+        long pVal );
+    HRESULT Reset ( );
+    HRESULT SetTestOrderSet (
+        const _variant_t & vKey,
+        struct ITTOrderSet * pOrderSet );
+    ITTOrderSetPtr GetTestOrderSet (
+        const _variant_t & vKey );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_SetTest (
+        VARIANT vKey,
+        struct ITTOrderSelector * pSelector ) = 0;
+    virtual HRESULT __stdcall raw_SetTestMaxQty (
+        VARIANT vKey,
+        long lMaxQty,
+        long lOverRide ) = 0;
+    virtual HRESULT __stdcall get_Enable (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_Enable (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+    virtual HRESULT __stdcall raw_SetTestOrderSet (
+        VARIANT vKey,
+        struct ITTOrderSet * pOrderSet ) = 0;
+    virtual HRESULT __stdcall get_TestOrderSet (
+        VARIANT vKey,
+        struct ITTOrderSet * * pVal ) = 0;
+};
+
+struct __declspec(uuid("a2b6fd96-f8da-11d6-a2d5-00b0d0f3cca6"))
+OrderLimits;
+    // [ default ] interface IOrderLimits
+
+struct __declspec(uuid("9f9e6630-268e-11d9-9669-0800200c9a66"))
+ITTSODObj : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetGet))
+    _variant_t Get[];
+    __declspec(property(get=GetInstrument,put=PutInstrument))
+    ITTInstrObjPtr Instrument;
+    __declspec(property(get=GetIsComplete))
+    long IsComplete;
+    __declspec(property(get=GetReadProperties))
+    _variant_t ReadProperties[];
+    __declspec(property(get=GetWriteProperties))
+    _variant_t WriteProperties[];
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _variant_t GetGet (
+        const _variant_t & vKey );
+    ITTInstrObjPtr GetInstrument ( );
+    void PutInstrument (
+        struct ITTInstrObj * pInstrObj );
+    long GetIsComplete ( );
+    _variant_t GetReadProperties (
+        _bstr_t sKey );
+    _variant_t GetWriteProperties (
+        _bstr_t sKey );
+    HRESULT Reset ( );
+    HRESULT Set (
+        const _variant_t & vKey,
+        const _variant_t & newVal );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Get (
+        VARIANT vKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_Instrument (
+        struct ITTInstrObj * * pInstrObj ) = 0;
+    virtual HRESULT __stdcall put_Instrument (
+        struct ITTInstrObj * pInstrObj ) = 0;
+    virtual HRESULT __stdcall get_IsComplete (
+        long * bVal ) = 0;
+    virtual HRESULT __stdcall get_ReadProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_WriteProperties (
+        BSTR sKey,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+    virtual HRESULT __stdcall raw_Set (
+        VARIANT vKey,
+        VARIANT newVal ) = 0;
+};
+
+struct __declspec(uuid("9f9e6631-268e-11d9-9669-0800200c9a66"))
+TTSODObj;
+    // [ default ] interface ITTSODObj
+
+struct __declspec(uuid("f87cc130-268d-11d9-9669-0800200c9a66"))
+ITTSODSet : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    ITTSODObjPtr Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=GetIsComplete))
+    long IsComplete;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    IUnknownPtr Get_NewEnum ( );
+    ITTSODObjPtr GetItem (
+        const _variant_t & Index );
+    long GetCount ( );
+    long GetIsComplete ( );
+    HRESULT DeleteAll (
+        const _variant_t & vMember = vtMissing,
+        const _variant_t & vGroup = vtMissing,
+        const _variant_t & vTrader = vtMissing );
+    HRESULT DeleteRecord (
+        const _variant_t & vKey );
+    HRESULT Empty ( );
+    HRESULT RetrieveByTrader (
+        _bstr_t sMember,
+        _bstr_t sGroup,
+        _bstr_t sTrader );
+    HRESULT RemoveLocalRecord (
+        const _variant_t & vKey );
+    HRESULT Save ( );
+    HRESULT SetRecord (
+        struct ITTSODObj * pSODRec );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get__NewEnum (
+        IUnknown * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Item (
+        VARIANT Index,
+        struct ITTSODObj * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Count (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_IsComplete (
+        long * bVal ) = 0;
+    virtual HRESULT __stdcall raw_DeleteAll (
+        VARIANT vMember = vtMissing,
+        VARIANT vGroup = vtMissing,
+        VARIANT vTrader = vtMissing ) = 0;
+    virtual HRESULT __stdcall raw_DeleteRecord (
+        VARIANT vKey ) = 0;
+    virtual HRESULT __stdcall raw_Empty ( ) = 0;
+    virtual HRESULT __stdcall raw_RetrieveByTrader (
+        BSTR sMember,
+        BSTR sGroup,
+        BSTR sTrader ) = 0;
+    virtual HRESULT __stdcall raw_RemoveLocalRecord (
+        VARIANT vKey ) = 0;
+    virtual HRESULT __stdcall raw_Save ( ) = 0;
+    virtual HRESULT __stdcall raw_SetRecord (
+        struct ITTSODObj * pSODRec ) = 0;
+};
+
+struct __declspec(uuid("f87cc131-268d-11d9-9669-0800200c9a66"))
+TTSODSet;
+    // [ default ] interface ITTSODSet
+
+struct __declspec(uuid("aed2bb80-2475-11d9-9669-0800200c9a66"))
+ITTRiskManager : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetDebugLogLevel,put=PutDebugLogLevel))
+    long DebugLogLevel;
+    __declspec(property(get=GetIsDirty))
+    long IsDirty;
+    __declspec(property(get=GetIsLoggedIn))
+    long IsLoggedIn;
+    __declspec(property(get=GetSODSet))
+    ITTSODSetPtr SODSet;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetDebugLogLevel ( );
+    void PutDebugLogLevel (
+        long pVal );
+    long GetIsDirty ( );
+    long GetIsLoggedIn ( );
+    ITTSODSetPtr GetSODSet ( );
+    HRESULT Publish ( );
+    HRESULT Reset ( );
+    HRESULT SetAdminLogon (
+        _bstr_t sAdminExchange,
+        _bstr_t sAdminMember,
+        _bstr_t sAdminGroup,
+        _bstr_t sAdminTrader,
+        _bstr_t sPassword );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_DebugLogLevel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall put_DebugLogLevel (
+        long pVal ) = 0;
+    virtual HRESULT __stdcall get_IsDirty (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_IsLoggedIn (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_SODSet (
+        struct ITTSODSet * * pVal ) = 0;
+    virtual HRESULT __stdcall raw_Publish ( ) = 0;
+    virtual HRESULT __stdcall raw_Reset ( ) = 0;
+    virtual HRESULT __stdcall raw_SetAdminLogon (
+        BSTR sAdminExchange,
+        BSTR sAdminMember,
+        BSTR sAdminGroup,
+        BSTR sAdminTrader,
+        BSTR sPassword ) = 0;
+};
+
+struct __declspec(uuid("aed2bb82-2475-11d9-9669-0800200c9a66"))
+_ITTRiskManagerEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT OnDataLoaded ( );
+    HRESULT OnDataChanged (
+        _bstr_t sMember,
+        _bstr_t sGroup,
+        _bstr_t sTrader );
+    HRESULT OnPublishComplete ( );
+    HRESULT OnLoginFailed (
+        _bstr_t sAdminExchange,
+        _bstr_t sAdminMember,
+        _bstr_t sAdminGroup,
+        _bstr_t sAdminTrader,
+        _bstr_t sMsg );
+};
+
+struct __declspec(uuid("aed2bb81-2475-11d9-9669-0800200c9a66"))
+TTRiskManager;
+    // [ default ] interface ITTRiskManager
+    // [ default, source ] dispinterface _ITTRiskManagerEvents
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_XTAPI =
+    {0x98b8ae14,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) DIID__ITTGateEvents =
+    {0x98b8ae23,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTInstrNotify =
+    {0x57cad265,0x5076,0x11d6,{0xa2,0x7f,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTInstrObj =
+    {0x98b8ae24,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTOrderSelector =
+    {0x0a35cfa4,0x60f4,0x11d6,{0xa2,0x86,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTOrderSet =
+    {0x53ef4247,0x66b4,0x11d6,{0xa2,0x87,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTOrderProfile =
+    {0x5bec3c58,0x6bf6,0x11d6,{0xa2,0x8b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTOrderObj =
+    {0x0a35cf9f,0x60f4,0x11d6,{0xa2,0x86,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTOrderTrackerObj =
+    {0x32a5188b,0x4d43,0x49e2,{0x88,0x4e,0xd9,0x3d,0x37,0x84,0x2b,0x18}};
+extern "C" const GUID __declspec(selectany) IID_ITTFillObj =
+    {0xf5af1c09,0x76f4,0x11d6,{0xa2,0x8d,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTGate =
+    {0x98b8ae22,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTGate =
+    {0x98b8ae21,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) DIID__ITTInstrObjEvents =
+    {0x98b8ae26,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IInstrCollection =
+    {0x63ba2ac0,0x481c,0x11d6,{0xa2,0x7c,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTInstrObj =
+    {0x98b8ae25,0x466f,0x11d6,{0xa2,0x7b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_InstrCollection =
+    {0x63ba2ac1,0x481c,0x11d6,{0xa2,0x7c,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) DIID__ITTInstrNotifyEvents =
+    {0x57cad267,0x5076,0x11d6,{0xa2,0x7f,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTInstrNotify =
+    {0x57cad266,0x5076,0x11d6,{0xa2,0x7f,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTOrderObj =
+    {0x0a35cfa0,0x60f4,0x11d6,{0xa2,0x86,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTOrderSelector =
+    {0x0a35cfa5,0x60f4,0x11d6,{0xa2,0x86,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTOrderTrackerObj =
+    {0x5490f5c3,0xe404,0x4b1c,{0x9b,0x96,0x29,0x35,0x60,0xf0,0xea,0x88}};
+extern "C" const GUID __declspec(selectany) DIID__ITTOrderSetEvents =
+    {0x53ef4249,0x66b4,0x11d6,{0xa2,0x87,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IOrderSetCol =
+    {0x5bec3c4e,0x6bf6,0x11d6,{0xa2,0x8b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IOrderProfileCol =
+    {0x5bec3c5e,0x6bf6,0x11d6,{0xa2,0x8b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTHotKeyNotify =
+    {0xa614cec5,0x9275,0x11d6,{0xa2,0x9e,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTOrderSet =
+    {0x53ef4248,0x66b4,0x11d6,{0xa2,0x87,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_ServiceGate =
+    {0xf90afc42,0x6355,0x11d6,{0xa2,0x86,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IServiceGate =
+    {0xf90afc41,0x6355,0x11d6,{0xa2,0x86,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_OrderSetCol =
+    {0x5bec3c4f,0x6bf6,0x11d6,{0xa2,0x8b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTOrderProfile =
+    {0x5bec3c59,0x6bf6,0x11d6,{0xa2,0x8b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_OrderProfileCol =
+    {0x5bec3c5f,0x6bf6,0x11d6,{0xa2,0x8b,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTFillObj =
+    {0xf5af1c0a,0x76f4,0x11d6,{0xa2,0x8d,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) DIID__ITTHotKeyNotifyEvents =
+    {0xa614cec7,0x9275,0x11d6,{0xa2,0x9e,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTHotKeyNotify =
+    {0xa614cec6,0x9275,0x11d6,{0xa2,0x9e,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTDropHandler =
+    {0x95d3437b,0xd62d,0x11d6,{0xa2,0xc1,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) DIID__ITTDropHandlerEvents =
+    {0x95d3437d,0xd62d,0x11d6,{0xa2,0xc1,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_TTDropHandler =
+    {0x95d3437c,0xd62d,0x11d6,{0xa2,0xc1,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_IOrderLimits =
+    {0xa2b6fd95,0xf8da,0x11d6,{0xa2,0xd5,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) CLSID_OrderLimits =
+    {0xa2b6fd96,0xf8da,0x11d6,{0xa2,0xd5,0x00,0xb0,0xd0,0xf3,0xcc,0xa6}};
+extern "C" const GUID __declspec(selectany) IID_ITTSODObj =
+    {0x9f9e6630,0x268e,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+extern "C" const GUID __declspec(selectany) CLSID_TTSODObj =
+    {0x9f9e6631,0x268e,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+extern "C" const GUID __declspec(selectany) IID_ITTSODSet =
+    {0xf87cc130,0x268d,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+extern "C" const GUID __declspec(selectany) CLSID_TTSODSet =
+    {0xf87cc131,0x268d,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+extern "C" const GUID __declspec(selectany) IID_ITTRiskManager =
+    {0xaed2bb80,0x2475,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+extern "C" const GUID __declspec(selectany) DIID__ITTRiskManagerEvents =
+    {0xaed2bb82,0x2475,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+extern "C" const GUID __declspec(selectany) CLSID_TTRiskManager =
+    {0xaed2bb81,0x2475,0x11d9,{0x96,0x69,0x08,0x00,0x20,0x0c,0x9a,0x66}};
+
+//
+// Wrapper method implementations
+//
+
+#include "XTAPITTM_6.2.tli"
+
+} // namespace XTAPI
+
+#pragma pack(pop)

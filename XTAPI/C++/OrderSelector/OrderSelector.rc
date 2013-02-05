@@ -1,0 +1,201 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OrderSelector.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\OrderSelector.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ORDERSELECTOR_DIALOG DIALOGEX 0, 0, 288, 319
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "OrderSelector"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EXCHANGEBOX,63,54,81,14,ES_AUTOHSCROLL
+    RTEXT           "Exchange:",IDC_STATIC,14,57,46,8
+    EDITTEXT        IDC_PRODUCTBOX,63,70,81,14,ES_AUTOHSCROLL
+    RTEXT           "Product:",IDC_STATIC,14,73,46,8
+    EDITTEXT        IDC_PRODTYPEBOX,63,86,81,14,ES_AUTOHSCROLL
+    RTEXT           "ProductType:",IDC_STATIC,14,89,46,8
+    EDITTEXT        IDC_CONTRACTBOX,63,102,81,14,ES_AUTOHSCROLL
+    RTEXT           "Contract:",IDC_STATIC,14,105,46,8
+    EDITTEXT        IDC_PRICEBOX,204,70,67,14,ES_AUTOHSCROLL
+    RTEXT           "Price:",IDC_STATIC,169,73,31,8
+    EDITTEXT        IDC_QUANTITYBOX,204,86,67,14,ES_AUTOHSCROLL
+    RTEXT           "Quantity:",IDC_STATIC,166,89,34,8
+    PUSHBUTTON      "Buy",IDC_BUYBUTTON,182,104,44,14,WS_DISABLED
+    GROUPBOX        "Instrument Information",IDC_STATIC,7,43,145,80
+    PUSHBUTTON      "Sell",IDC_SELLBUTTON,228,104,44,14,WS_DISABLED
+    GROUPBOX        "Order Selector",IDC_STATIC,7,127,274,178
+    COMBOBOX        IDC_CUSTOMERCOMBO,204,54,67,60,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Customer:",IDC_STATIC,169,57,31,8
+    EDITTEXT        IDC_ORDERBOOKBOX,13,206,262,93,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_STATUSBAR,7,306,274,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    CTEXT           "WARNING!",IDC_WARNING,7,7,274,17
+    CTEXT           "This sample is NOT to be used in production or during conformance testing.",IDC_STATIC,7,28,274,8
+    GROUPBOX        "Limit Order Entry",IDC_STATIC,157,43,124,80
+    CONTROL         "X_TRADER Orders",IDC_CHK_XTRADER,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,29,139,75,10
+    CONTROL         "XTAPI Orders",IDC_CHK_XTAPI,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,47,150,57,10
+    CONTROL         "Sell",IDC_CHK_SELL,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,122,139,36,10
+    CONTROL         "Buy",IDC_CHK_BUY,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,122,150,36,10
+    CONTROL         "Contract",IDC_CHK_CONTRACT,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,64,171,40,10
+    CONTROL         "Exchange",IDC_CHK_EXCHANGE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,59,186,45,10
+    EDITTEXT        IDC_CONTRACTBOX2,110,168,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXCHANGEBOX2,110,184,48,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set Selector",IDC_SELECTORBUTTON,210,184,65,14
+    CONTROL         "All Matches Required",IDC_RAD_ALLREQUIRED,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT,192,142,83,10
+    CONTROL         "Allow Any Matches",IDC_RAD_ALLOWANY,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT,199,154,76,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "OrderSelector MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "OrderSelector"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "OrderSelector.EXE"
+            VALUE "ProductName", "OrderSelector Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ORDERSELECTOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OrderSelector.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

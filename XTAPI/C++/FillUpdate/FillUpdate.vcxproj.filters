@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2e61c101-7815-43fa-a766-e53bdc30b286}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4f227d7d-6aa0-4389-a32c-9d10928d1157}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{27eceaec-84e2-46bc-8511-4e21bca4ba1d}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="XTAPI">
+      <UniqueIdentifier>{4690d238-183d-48e5-b0c5-2d056a94f02a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XTAPI\OrderSetNotifySink.cpp">
+      <Filter>XTAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="FillUpdateDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FillUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XTAPI\OrderSetNotifySink.h">
+      <Filter>XTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="FillUpdateDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FillUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FillUpdate.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FillUpdate.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FillUpdate.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

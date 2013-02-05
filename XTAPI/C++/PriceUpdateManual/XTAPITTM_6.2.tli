@@ -1,0 +1,1502 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (93455653).
+//
+// XTAPITTM_6.2.tli
+//
+// Wrapper implementations for Win32 type library C:\tt\x_trader\xtapi\bin\XTAPITTM_6.2.DLL
+// compiler-generated file created 08/16/05 at 09:53:43 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface _ITTGateEvents wrapper method implementations
+//
+
+inline HRESULT _ITTGateEvents::OnStatusUpdate ( long lHintMask, _bstr_t sText ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0008", lHintMask, (BSTR)sText);
+}
+
+inline HRESULT _ITTGateEvents::OnExchangeStateUpdate ( _bstr_t sExchange, _bstr_t sText, long bOpenned, long bServerUp ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008\x0008\x0003\x0003", (BSTR)sExchange, (BSTR)sText, bOpenned, bServerUp);
+}
+
+inline HRESULT _ITTGateEvents::OnExchangeMessage ( _bstr_t sExchange, _bstr_t sTimeStamp, _bstr_t sInfo, _bstr_t sText ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008\x0008\x0008\x0008", (BSTR)sExchange, (BSTR)sTimeStamp, (BSTR)sInfo, (BSTR)sText);
+}
+
+//
+// interface ITTInstrNotify wrapper method implementations
+//
+
+inline ITTInstrObjPtr ITTInstrNotify::GetInstrument ( ) {
+    struct ITTInstrObj * _result;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTInstrObjPtr(_result, false);
+}
+
+inline _bstr_t ITTInstrNotify::GetUpdateFilter ( ) {
+    BSTR _result;
+    HRESULT _hr = get_UpdateFilter(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrNotify::PutUpdateFilter ( _bstr_t pVal ) {
+    HRESULT _hr = put_UpdateFilter(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTInstrNotify::GetEnablePriceUpdates ( ) {
+    long _result;
+    HRESULT _hr = get_EnablePriceUpdates(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTInstrNotify::PutEnablePriceUpdates ( long pVal ) {
+    HRESULT _hr = put_EnablePriceUpdates(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTInstrNotify::GetEnableDepthUpdates ( ) {
+    long _result;
+    HRESULT _hr = get_EnableDepthUpdates(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTInstrNotify::PutEnableDepthUpdates ( long pVal ) {
+    HRESULT _hr = put_EnableDepthUpdates(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTInstrNotify::AttachInstrument ( struct ITTInstrObj * pInstrObj ) {
+    HRESULT _hr = raw_AttachInstrument(pInstrObj);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTInstrNotify::DetachInstrument ( struct ITTInstrObj * pInstrObj ) {
+    HRESULT _hr = raw_DetachInstrument(pInstrObj);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTInstrNotify::GetDebugLogLevel ( ) {
+    long _result;
+    HRESULT _hr = get_DebugLogLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTInstrNotify::PutDebugLogLevel ( long pVal ) {
+    HRESULT _hr = put_DebugLogLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTInstrNotify::GetInstrFilter ( struct ITTInstrObj * pInstr ) {
+    BSTR _result;
+    HRESULT _hr = get_InstrFilter(pInstr, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrNotify::PutInstrFilter ( struct ITTInstrObj * pInstr, _bstr_t pVal ) {
+    HRESULT _hr = put_InstrFilter(pInstr, pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTInstrNotify::AttachOrderSet ( struct ITTOrderSet * pOrderSet ) {
+    HRESULT _hr = raw_AttachOrderSet(pOrderSet);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTInstrNotify::DetachOrderSet ( struct ITTOrderSet * pOrderSet ) {
+    HRESULT _hr = raw_DetachOrderSet(pOrderSet);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITTInstrObj wrapper method implementations
+//
+
+inline _bstr_t ITTInstrObj::GetAlias ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Alias(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrObj::PutAlias ( _bstr_t pVal ) {
+    HRESULT _hr = put_Alias(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTInstrObj::GetExchange ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Exchange(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrObj::PutExchange ( _bstr_t pVal ) {
+    HRESULT _hr = put_Exchange(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTInstrObj::GetProduct ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Product(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrObj::PutProduct ( _bstr_t pVal ) {
+    HRESULT _hr = put_Product(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTInstrObj::GetProdType ( ) {
+    BSTR _result;
+    HRESULT _hr = get_ProdType(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrObj::PutProdType ( _bstr_t pVal ) {
+    HRESULT _hr = put_ProdType(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTInstrObj::GetContract ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Contract(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrObj::PutContract ( _bstr_t pVal ) {
+    HRESULT _hr = put_Contract(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTInstrObj::GetSeriesKey ( ) {
+    BSTR _result;
+    HRESULT _hr = get_SeriesKey(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTInstrObj::PutSeriesKey ( _bstr_t pVal ) {
+    HRESULT _hr = put_SeriesKey(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTInstrObj::Open ( long bDepth ) {
+    HRESULT _hr = raw_Open(bDepth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ITTInstrObj::GetGet ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Get(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline ITTInstrNotifyPtr ITTInstrObj::GetCreateNotifyObject ( ) {
+    struct ITTInstrNotify * _result;
+    HRESULT _hr = get_CreateNotifyObject(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTInstrNotifyPtr(_result, false);
+}
+
+inline _variant_t ITTInstrObj::GetReadProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ReadProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline ITTOrderSelectorPtr ITTInstrObj::GetCreateOrderSelector ( ) {
+    struct ITTOrderSelector * _result;
+    HRESULT _hr = get_CreateOrderSelector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderSelectorPtr(_result, false);
+}
+
+inline long ITTInstrObj::GetDebugLogLevel ( ) {
+    long _result;
+    HRESULT _hr = get_DebugLogLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTInstrObj::PutDebugLogLevel ( long pVal ) {
+    HRESULT _hr = put_DebugLogLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ITTInstrObj::GetTickPrice ( const _variant_t & vValue, long lTickOffset, _bstr_t sOutType ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_TickPrice(vValue, lTickOffset, sOutType, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline ITTOrderSetPtr ITTInstrObj::GetOrderSet ( ) {
+    struct ITTOrderSet * _result;
+    HRESULT _hr = get_OrderSet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderSetPtr(_result, false);
+}
+
+inline void ITTInstrObj::PutOrderSet ( struct ITTOrderSet * pVal ) {
+    HRESULT _hr = put_OrderSet(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTInstrObj::Retrieve ( ) {
+    HRESULT _hr = raw_Retrieve();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITTOrderSelector wrapper method implementations
+//
+
+inline long ITTOrderSelector::GetAllowAnyMatches ( ) {
+    long _result;
+    HRESULT _hr = get_AllowAnyMatches(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSelector::PutAllowAnyMatches ( long pVal ) {
+    HRESULT _hr = put_AllowAnyMatches(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTOrderSelector::GetAllMatchesRequired ( ) {
+    long _result;
+    HRESULT _hr = get_AllMatchesRequired(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSelector::PutAllMatchesRequired ( long pVal ) {
+    HRESULT _hr = put_AllMatchesRequired(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTOrderSelector::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTOrderSelector::AddTest ( LPSTR lpProperty, const _variant_t & vValue ) {
+    HRESULT _hr = raw_AddTest(lpProperty, vValue);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTOrderSelector::AddSelector ( struct ITTOrderSelector * pSelector ) {
+    HRESULT _hr = raw_AddSelector(pSelector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTOrderSelector::InvertTest ( ) {
+    HRESULT _hr = raw_InvertTest();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTOrderSelector::GetTestMatch ( IUnknown * pOrderOrFill ) {
+    long _result;
+    HRESULT _hr = get_TestMatch(pOrderOrFill, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITTOrderSet wrapper method implementations
+//
+
+inline IUnknownPtr ITTOrderSet::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t ITTOrderSet::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ITTOrderSet::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITTOrderSet::Open ( const _variant_t & bEnableOrderSend ) {
+    HRESULT _hr = raw_Open(bEnableOrderSend);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ITTOrderSelectorPtr ITTOrderSet::GetOrderSelector ( ) {
+    struct ITTOrderSelector * _result;
+    HRESULT _hr = get_OrderSelector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderSelectorPtr(_result, false);
+}
+
+inline void ITTOrderSet::PutOrderSelector ( struct ITTOrderSelector * pVal ) {
+    HRESULT _hr = put_OrderSelector(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTOrderSet::Close ( ) {
+    HRESULT _hr = raw_Close();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ITTOrderSet::GetGet ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Get(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _bstr_t ITTOrderSet::GetAlias ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Alias(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTOrderSet::PutAlias ( _bstr_t pVal ) {
+    HRESULT _hr = put_Alias(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTOrderSet::GetSendOrder ( struct ITTOrderProfile * pOrderProfile ) {
+    long _result;
+    HRESULT _hr = get_SendOrder(pOrderProfile, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITTOrderSet::Set ( const _variant_t & vKey, const _variant_t & newVal ) {
+    HRESULT _hr = raw_Set(vKey, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ITTOrderSet::GetReadProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ReadProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderSet::GetWriteProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_WriteProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ITTOrderSet::GetEnableOrderSetUpdates ( ) {
+    long _result;
+    HRESULT _hr = get_EnableOrderSetUpdates(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutEnableOrderSetUpdates ( long pVal ) {
+    HRESULT _hr = put_EnableOrderSetUpdates(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTOrderSet::GetEnableOrderFillData ( ) {
+    long _result;
+    HRESULT _hr = get_EnableOrderFillData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutEnableOrderFillData ( long pVal ) {
+    HRESULT _hr = put_EnableOrderFillData(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTOrderSet::GetEnableOrderSend ( ) {
+    long _result;
+    HRESULT _hr = get_EnableOrderSend(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutEnableOrderSend ( long pVal ) {
+    HRESULT _hr = put_EnableOrderSend(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTOrderSet::GetDeleteOrders ( const _variant_t & bBuySell, const _variant_t & vLowTicks, const _variant_t & vHighTicks, long bInclusiveRange, struct ITTOrderSelector * pSelector ) {
+    long _result;
+    HRESULT _hr = get_DeleteOrders(bBuySell, vLowTicks, vHighTicks, bInclusiveRange, pSelector, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTOrderSet::GetDeleteContracts ( long bBuySell, long lMinDeleteQty, const _variant_t & vLowTicks, const _variant_t & vHighTicks, struct ITTOrderSelector * pSelector, long bInsideOut ) {
+    long _result;
+    HRESULT _hr = get_DeleteContracts(bBuySell, lMinDeleteQty, vLowTicks, vHighTicks, pSelector, bInsideOut, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITTOrderSet::SetValidExchanges ( _bstr_t sExchangeList, long bOrders, long bFills ) {
+    HRESULT _hr = raw_SetValidExchanges(sExchangeList, bOrders, bFills);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTOrderSet::UpdateOrder ( struct ITTOrderProfile * pOrderProfile, long bCancelReplace ) {
+    HRESULT _hr = raw_UpdateOrder(pOrderProfile, bCancelReplace);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTOrderSet::HoldOrder ( struct ITTOrderObj * pOrderObj, long bHoldOrder ) {
+    HRESULT _hr = raw_HoldOrder(pOrderObj, bHoldOrder);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTOrderSet::GetEnableOrderAutoDelete ( ) {
+    long _result;
+    HRESULT _hr = get_EnableOrderAutoDelete(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutEnableOrderAutoDelete ( long pVal ) {
+    HRESULT _hr = put_EnableOrderAutoDelete(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTOrderSet::OpenQuoting ( struct ITTOrderProfile * pOrderProfile, long bEnableOrderAutoDelete ) {
+    HRESULT _hr = raw_OpenQuoting(pOrderProfile, bEnableOrderAutoDelete);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ITTOrderProfilePtr ITTOrderSet::GetQuotingOrderProfile ( ) {
+    struct ITTOrderProfile * _result;
+    HRESULT _hr = get_QuotingOrderProfile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderProfilePtr(_result, false);
+}
+
+inline void ITTOrderSet::PutQuotingOrderProfile ( struct ITTOrderProfile * pVal ) {
+    HRESULT _hr = put_QuotingOrderProfile(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTOrderSet::UpdateQuote ( ) {
+    HRESULT _hr = raw_UpdateQuote();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTOrderSet::GetDebugLogLevel ( ) {
+    long _result;
+    HRESULT _hr = get_DebugLogLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutDebugLogLevel ( long pVal ) {
+    HRESULT _hr = put_DebugLogLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTOrderSet::ClearQuotePosition ( long bNet, long bBuys, long bSells ) {
+    HRESULT _hr = raw_ClearQuotePosition(bNet, bBuys, bSells);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTOrderSet::GetQuoteWithCancelReplace ( ) {
+    long _result;
+    HRESULT _hr = get_QuoteWithCancelReplace(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutQuoteWithCancelReplace ( long pVal ) {
+    HRESULT _hr = put_QuoteWithCancelReplace(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ITTOrderSelectorPtr ITTOrderSet::GetCreateOrderSelector ( ) {
+    struct ITTOrderSelector * _result;
+    HRESULT _hr = get_CreateOrderSelector(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderSelectorPtr(_result, false);
+}
+
+inline _variant_t ITTOrderSet::GetSiteKeyLookup ( LPSTR sSiteKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_SiteKeyLookup(sSiteKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ITTOrderSet::GetEnableOrderUpdateData ( ) {
+    long _result;
+    HRESULT _hr = get_EnableOrderUpdateData(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTOrderSet::PutEnableOrderUpdateData ( long pVal ) {
+    HRESULT _hr = put_EnableOrderUpdateData(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline ITTOrderTrackerObjPtr ITTOrderSet::GetNextOrderTracker ( ) {
+    struct ITTOrderTrackerObj * _result;
+    HRESULT _hr = get_NextOrderTracker(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderTrackerObjPtr(_result, false);
+}
+
+//
+// interface ITTOrderProfile wrapper method implementations
+//
+
+inline ITTInstrObjPtr ITTOrderProfile::GetInstrument ( ) {
+    struct ITTInstrObj * _result;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTInstrObjPtr(_result, false);
+}
+
+inline void ITTOrderProfile::PutInstrument ( struct ITTInstrObj * pVal ) {
+    HRESULT _hr = put_Instrument(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTOrderProfile::GetCustomer ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Customer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTOrderProfile::PutCustomer ( _bstr_t pVal ) {
+    HRESULT _hr = put_Customer(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ITTOrderProfile::GetAlias ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Alias(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ITTOrderProfile::PutAlias ( _bstr_t pVal ) {
+    HRESULT _hr = put_Alias(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ITTOrderProfile::Set ( const _variant_t & vKey, const _variant_t & newVal ) {
+    HRESULT _hr = raw_Set(vKey, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ITTOrderProfile::GetGet ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Get(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderProfile::GetReadProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ReadProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderProfile::GetWriteProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_WriteProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderProfile::GetCustomers ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Customers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderProfile::GetGetLast ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GetLast(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline ITTOrderObjPtr ITTOrderProfile::GetLastOrder ( ) {
+    struct ITTOrderObj * _result;
+    HRESULT _hr = raw_GetLastOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderObjPtr(_result, false);
+}
+
+inline void ITTOrderProfile::PutRoundOption ( long * pVal ) {
+    HRESULT _hr = put_RoundOption(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTOrderProfile::GetRoundOption ( ) {
+    long _result;
+    HRESULT _hr = get_RoundOption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITTOrderObj wrapper method implementations
+//
+
+inline _variant_t ITTOrderObj::GetGet ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Get(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ITTOrderObj::GetDelete ( ) {
+    long _result;
+    HRESULT _hr = get_Delete(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITTOrderProfilePtr ITTOrderObj::GetCreateOrderProfile ( ) {
+    struct ITTOrderProfile * _result;
+    HRESULT _hr = get_CreateOrderProfile(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderProfilePtr(_result, false);
+}
+
+inline _variant_t ITTOrderObj::GetReadProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ReadProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT ITTOrderObj::HoldOrder ( ) {
+    HRESULT _hr = raw_HoldOrder();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline IDispatchPtr ITTOrderObj::GetInstrument ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline long ITTOrderObj::GetIsNull ( ) {
+    long _result;
+    HRESULT _hr = get_IsNull(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITTOrderObjPtr ITTOrderObj::GetNextOrder ( ) {
+    struct ITTOrderObj * _result;
+    HRESULT _hr = get_NextOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderObjPtr(_result, false);
+}
+
+inline long ITTOrderObj::GetHasNextOrder ( ) {
+    long _result;
+    HRESULT _hr = get_HasNextOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ITTOrderObj::GetGetChanged ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GetChanged(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderObj::GetGetIsChanged ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GetIsChanged(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ITTOrderTrackerObj wrapper method implementations
+//
+
+inline ITTOrderObjPtr ITTOrderTrackerObj::GetOldOrder ( ) {
+    struct ITTOrderObj * _result;
+    HRESULT _hr = get_OldOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderObjPtr(_result, false);
+}
+
+inline ITTOrderObjPtr ITTOrderTrackerObj::GetNewOrder ( ) {
+    struct ITTOrderObj * _result;
+    HRESULT _hr = get_NewOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderObjPtr(_result, false);
+}
+
+inline long ITTOrderTrackerObj::GetHasOldOrder ( ) {
+    long _result;
+    HRESULT _hr = get_HasOldOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTOrderTrackerObj::GetHasNewOrder ( ) {
+    long _result;
+    HRESULT _hr = get_HasNewOrder(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ITTOrderTrackerObj::GetGetChanged ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GetChanged(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTOrderTrackerObj::GetGetIsChanged ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_GetIsChanged(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+//
+// interface ITTFillObj wrapper method implementations
+//
+
+inline _variant_t ITTFillObj::GetGet ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Get(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTFillObj::GetReadProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ReadProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline IDispatchPtr ITTFillObj::GetInstrument ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT ITTFillObj::Confirm ( _bstr_t sAccount ) {
+    HRESULT _hr = raw_Confirm(sAccount);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITTGate wrapper method implementations
+//
+
+inline IDispatchPtr ITTGate::GetInstruments ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_Instruments(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline _variant_t ITTGate::GetInstrData ( _bstr_t vAlias, const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_InstrData(vAlias, vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline IDispatchPtr ITTGate::GetOrderSets ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_OrderSets(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline IDispatchPtr ITTGate::GetOrderProfiles ( ) {
+    IDispatch * _result;
+    HRESULT _hr = get_OrderProfiles(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IDispatchPtr(_result, false);
+}
+
+inline HRESULT ITTGate::OpenExchangeOrders ( _bstr_t sExchangeList ) {
+    HRESULT _hr = raw_OpenExchangeOrders(sExchangeList);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _variant_t ITTGate::GetOrderSetData ( _bstr_t vAlias, const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_OrderSetData(vAlias, vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ITTGate::GetEnableOrderSend ( ) {
+    long _result;
+    HRESULT _hr = get_EnableOrderSend(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTGate::PutEnableOrderSend ( long pVal ) {
+    HRESULT _hr = put_EnableOrderSend(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTGate::GetDebugLogLevel ( ) {
+    long _result;
+    HRESULT _hr = get_DebugLogLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTGate::PutDebugLogLevel ( long pVal ) {
+    HRESULT _hr = put_DebugLogLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _variant_t ITTGate::GetCustomers ( ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Customers(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT ITTGate::XTAPITerminate ( ) {
+    HRESULT _hr = raw_XTAPITerminate();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ITTGate::GetDebugAppInfo ( ) {
+    BSTR _result;
+    HRESULT _hr = get_DebugAppInfo(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline HRESULT ITTGate::EnableServerMode ( ) {
+    HRESULT _hr = raw_EnableServerMode();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTGate::SetExchangeLogon ( _bstr_t sExchange, _bstr_t sMember, _bstr_t sGroup, _bstr_t sTrader, _bstr_t sPassword, _bstr_t sClearMbr, _bstr_t sDefAcct, _bstr_t sHandOffGroup, _bstr_t sHandOffMember, _bstr_t sHandOffTrader ) {
+    HRESULT _hr = raw_SetExchangeLogon(sExchange, sMember, sGroup, sTrader, sPassword, sClearMbr, sDefAcct, sHandOffGroup, sHandOffMember, sHandOffTrader);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTGate::OpenExchangeFills ( _bstr_t sExchangeList ) {
+    HRESULT _hr = raw_OpenExchangeFills(sExchangeList);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTGate::OpenExchangePrices ( _bstr_t sExchangeList ) {
+    HRESULT _hr = raw_OpenExchangePrices(sExchangeList);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ITTGate::GetPrimaryCurrency ( ) {
+    BSTR _result;
+    HRESULT _hr = raw_GetPrimaryCurrency(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline double ITTGate::GetExchangeRate ( _bstr_t fromCurrency, _bstr_t toCurrency ) {
+    double _result;
+    HRESULT _hr = raw_GetExchangeRate(fromCurrency, toCurrency, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITTGate::DestroyDownloadedFills ( _bstr_t sExchangeList ) {
+    HRESULT _hr = raw_DestroyDownloadedFills(sExchangeList);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTGate::SetExchangeLogonEx ( _bstr_t sExchange, _bstr_t sMember, _bstr_t sGroup, _bstr_t sTrader, _bstr_t sPassword, _bstr_t sClearMbr, _bstr_t sDefAcct, _bstr_t sHandOffGroup, _bstr_t sHandOffMember, _bstr_t sHandOffTrader, _bstr_t sPreferredServerIP ) {
+    HRESULT _hr = raw_SetExchangeLogonEx(sExchange, sMember, sGroup, sTrader, sPassword, sClearMbr, sDefAcct, sHandOffGroup, sHandOffMember, sHandOffTrader, sPreferredServerIP);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTGate::GetRapidFillDelivery ( ) {
+    long _result;
+    HRESULT _hr = get_RapidFillDelivery(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTGate::PutRapidFillDelivery ( long pVal ) {
+    HRESULT _hr = put_RapidFillDelivery(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+//
+// interface IInstrCollection wrapper method implementations
+//
+
+inline IUnknownPtr IInstrCollection::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t IInstrCollection::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IInstrCollection::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface _ITTInstrNotifyEvents wrapper method implementations
+//
+
+inline HRESULT _ITTInstrNotifyEvents::OnNotifyFound ( struct ITTInstrNotify * pNotify, struct ITTInstrObj * pInstr ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009\x0009", pNotify, pInstr);
+}
+
+inline HRESULT _ITTInstrNotifyEvents::OnNotifyUpdate ( struct ITTInstrNotify * pNotify, struct ITTInstrObj * pInstr ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009\x0009", pNotify, pInstr);
+}
+
+inline HRESULT _ITTInstrNotifyEvents::OnNotifyDepthData ( struct ITTInstrNotify * pNotify, struct ITTInstrObj * pInstr ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009\x0009", pNotify, pInstr);
+}
+
+inline HRESULT _ITTInstrNotifyEvents::OnOrderSetUpdate ( struct ITTInstrNotify * pNotify, struct ITTInstrObj * pInstr, struct ITTOrderSet * pOrderSet ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009\x0009\x0009", pNotify, pInstr, pOrderSet);
+}
+
+//
+// dispinterface _ITTOrderSetEvents wrapper method implementations
+//
+
+inline HRESULT _ITTOrderSetEvents::OnOrderSetUpdate ( struct ITTOrderSet * pOrderSet ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", pOrderSet);
+}
+
+inline HRESULT _ITTOrderSetEvents::OnOrderFillData ( struct ITTFillObj * pFillObj ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0009", pFillObj);
+}
+
+inline HRESULT _ITTOrderSetEvents::OnOrderFillBlockStart ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _ITTOrderSetEvents::OnOrderFillBlockEnd ( ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// interface IOrderSetCol wrapper method implementations
+//
+
+inline IUnknownPtr IOrderSetCol::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t IOrderSetCol::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IOrderSetCol::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface IOrderProfileCol wrapper method implementations
+//
+
+inline IUnknownPtr IOrderProfileCol::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t IOrderProfileCol::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long IOrderProfileCol::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// interface ITTHotKeyNotify wrapper method implementations
+//
+
+inline HRESULT ITTHotKeyNotify::AddHotKey ( _bstr_t sName, _bstr_t sKey, int iMode ) {
+    HRESULT _hr = raw_AddHotKey(sName, sKey, iMode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTHotKeyNotify::DelHotKey ( _bstr_t sName ) {
+    HRESULT _hr = raw_DelHotKey(sName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface _ITTHotKeyNotifyEvents wrapper method implementations
+//
+
+inline HRESULT _ITTHotKeyNotifyEvents::OnHotKey ( _bstr_t sName ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008", (BSTR)sName);
+}
+
+//
+// interface ITTDropHandler wrapper method implementations
+//
+
+inline IUnknownPtr ITTDropHandler::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline _variant_t ITTDropHandler::GetItem ( const _variant_t & Index ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline long ITTDropHandler::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITTDropHandler::RegisterDropWindow ( int hWnd ) {
+    HRESULT _hr = raw_RegisterDropWindow(hWnd);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTDropHandler::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long ITTDropHandler::GetDropX ( ) {
+    long _result;
+    HRESULT _hr = get_DropX(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTDropHandler::GetDropY ( ) {
+    long _result;
+    HRESULT _hr = get_DropY(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTDropHandler::GetDropEffect ( ) {
+    long _result;
+    HRESULT _hr = get_DropEffect(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTDropHandler::GetDropKeyState ( ) {
+    long _result;
+    HRESULT _hr = get_DropKeyState(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+//
+// dispinterface _ITTDropHandlerEvents wrapper method implementations
+//
+
+inline HRESULT _ITTDropHandlerEvents::OnNotifyDrop ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+//
+// interface IOrderLimits wrapper method implementations
+//
+
+inline HRESULT IOrderLimits::SetTest ( const _variant_t & vKey, struct ITTOrderSelector * pSelector ) {
+    HRESULT _hr = raw_SetTest(vKey, pSelector);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IOrderLimits::SetTestMaxQty ( const _variant_t & vKey, long lMaxQty, long lOverRide ) {
+    HRESULT _hr = raw_SetTestMaxQty(vKey, lMaxQty, lOverRide);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline long IOrderLimits::GetEnable ( ) {
+    long _result;
+    HRESULT _hr = get_Enable(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void IOrderLimits::PutEnable ( long pVal ) {
+    HRESULT _hr = put_Enable(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT IOrderLimits::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT IOrderLimits::SetTestOrderSet ( const _variant_t & vKey, struct ITTOrderSet * pOrderSet ) {
+    HRESULT _hr = raw_SetTestOrderSet(vKey, pOrderSet);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline ITTOrderSetPtr IOrderLimits::GetTestOrderSet ( const _variant_t & vKey ) {
+    struct ITTOrderSet * _result;
+    HRESULT _hr = get_TestOrderSet(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTOrderSetPtr(_result, false);
+}
+
+//
+// interface ITTSODObj wrapper method implementations
+//
+
+inline _variant_t ITTSODObj::GetGet ( const _variant_t & vKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_Get(vKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline ITTInstrObjPtr ITTSODObj::GetInstrument ( ) {
+    struct ITTInstrObj * _result;
+    HRESULT _hr = get_Instrument(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTInstrObjPtr(_result, false);
+}
+
+inline void ITTSODObj::PutInstrument ( struct ITTInstrObj * pInstrObj ) {
+    HRESULT _hr = put_Instrument(pInstrObj);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTSODObj::GetIsComplete ( ) {
+    long _result;
+    HRESULT _hr = get_IsComplete(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline _variant_t ITTSODObj::GetReadProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_ReadProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline _variant_t ITTSODObj::GetWriteProperties ( _bstr_t sKey ) {
+    VARIANT _result;
+    VariantInit(&_result);
+    HRESULT _hr = get_WriteProperties(sKey, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _variant_t(_result, false);
+}
+
+inline HRESULT ITTSODObj::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODObj::Set ( const _variant_t & vKey, const _variant_t & newVal ) {
+    HRESULT _hr = raw_Set(vKey, newVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITTSODSet wrapper method implementations
+//
+
+inline IUnknownPtr ITTSODSet::Get_NewEnum ( ) {
+    IUnknown * _result;
+    HRESULT _hr = get__NewEnum(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return IUnknownPtr(_result, false);
+}
+
+inline ITTSODObjPtr ITTSODSet::GetItem ( const _variant_t & Index ) {
+    struct ITTSODObj * _result;
+    HRESULT _hr = get_Item(Index, &_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTSODObjPtr(_result, false);
+}
+
+inline long ITTSODSet::GetCount ( ) {
+    long _result;
+    HRESULT _hr = get_Count(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTSODSet::GetIsComplete ( ) {
+    long _result;
+    HRESULT _hr = get_IsComplete(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ITTSODSet::DeleteAll ( const _variant_t & vMember, const _variant_t & vGroup, const _variant_t & vTrader ) {
+    HRESULT _hr = raw_DeleteAll(vMember, vGroup, vTrader);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODSet::DeleteRecord ( const _variant_t & vKey ) {
+    HRESULT _hr = raw_DeleteRecord(vKey);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODSet::Empty ( ) {
+    HRESULT _hr = raw_Empty();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODSet::RetrieveByTrader ( _bstr_t sMember, _bstr_t sGroup, _bstr_t sTrader ) {
+    HRESULT _hr = raw_RetrieveByTrader(sMember, sGroup, sTrader);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODSet::RemoveLocalRecord ( const _variant_t & vKey ) {
+    HRESULT _hr = raw_RemoveLocalRecord(vKey);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODSet::Save ( ) {
+    HRESULT _hr = raw_Save();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTSODSet::SetRecord ( struct ITTSODObj * pSODRec ) {
+    HRESULT _hr = raw_SetRecord(pSODRec);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// interface ITTRiskManager wrapper method implementations
+//
+
+inline long ITTRiskManager::GetDebugLogLevel ( ) {
+    long _result;
+    HRESULT _hr = get_DebugLogLevel(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ITTRiskManager::PutDebugLogLevel ( long pVal ) {
+    HRESULT _hr = put_DebugLogLevel(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ITTRiskManager::GetIsDirty ( ) {
+    long _result;
+    HRESULT _hr = get_IsDirty(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ITTRiskManager::GetIsLoggedIn ( ) {
+    long _result;
+    HRESULT _hr = get_IsLoggedIn(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline ITTSODSetPtr ITTRiskManager::GetSODSet ( ) {
+    struct ITTSODSet * _result;
+    HRESULT _hr = get_SODSet(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return ITTSODSetPtr(_result, false);
+}
+
+inline HRESULT ITTRiskManager::Publish ( ) {
+    HRESULT _hr = raw_Publish();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTRiskManager::Reset ( ) {
+    HRESULT _hr = raw_Reset();
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline HRESULT ITTRiskManager::SetAdminLogon ( _bstr_t sAdminExchange, _bstr_t sAdminMember, _bstr_t sAdminGroup, _bstr_t sAdminTrader, _bstr_t sPassword ) {
+    HRESULT _hr = raw_SetAdminLogon(sAdminExchange, sAdminMember, sAdminGroup, sAdminTrader, sPassword);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+//
+// dispinterface _ITTRiskManagerEvents wrapper method implementations
+//
+
+inline HRESULT _ITTRiskManagerEvents::OnDataLoaded ( ) {
+    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _ITTRiskManagerEvents::OnDataChanged ( _bstr_t sMember, _bstr_t sGroup, _bstr_t sTrader ) {
+    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008\x0008\x0008", (BSTR)sMember, (BSTR)sGroup, (BSTR)sTrader);
+}
+
+inline HRESULT _ITTRiskManagerEvents::OnPublishComplete ( ) {
+    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline HRESULT _ITTRiskManagerEvents::OnLoginFailed ( _bstr_t sAdminExchange, _bstr_t sAdminMember, _bstr_t sAdminGroup, _bstr_t sAdminTrader, _bstr_t sMsg ) {
+    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0008\x0008\x0008\x0008\x0008", (BSTR)sAdminExchange, (BSTR)sAdminMember, (BSTR)sAdminGroup, (BSTR)sAdminTrader, (BSTR)sMsg);
+}

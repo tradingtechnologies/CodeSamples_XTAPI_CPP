@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1388cc2d-c2e6-49a2-bf6c-89a91ce58d9a}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{cfcd56c1-fc10-434b-aa2e-8b5e21fd37d6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{8283fbf0-c898-4b9e-8cdc-7c2d07f5ca57}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="XTAPI">
+      <UniqueIdentifier>{257d3251-b2e2-4d65-8bef-8c0bb47c81d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XTAPI\DropHandlerSink.cpp">
+      <Filter>XTAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="XTAPI\InstrNotifySink.cpp">
+      <Filter>XTAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmitOrderDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmitOrder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XTAPI\DropHandlerSink.h">
+      <Filter>XTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="XTAPI\InstrNotifySink.h">
+      <Filter>XTAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmitOrderDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmitOrder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\SubmitOrder.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SubmitOrder.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SubmitOrder.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

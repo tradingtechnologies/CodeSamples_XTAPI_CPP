@@ -1,0 +1,225 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PriceUpdateDepth.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\PriceUpdateDepth.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TTPRICEUPDATE_DIALOG DIALOGEX 0, 0, 438, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PriceUpdateDepth"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    RTEXT           "Exchange:",IDC_STATIC,23,57,38,8
+    EDITTEXT        IDC_EXCHANGEBOX,65,54,68,14,ES_AUTOHSCROLL
+    RTEXT           "Product:",IDC_STATIC,23,73,38,8
+    EDITTEXT        IDC_PRODUCTBOX,65,70,68,14,ES_AUTOHSCROLL
+    RTEXT           "Product Type:",IDC_STATIC,14,90,47,8
+    EDITTEXT        IDC_PRODTYPEBOX,65,86,68,14,ES_AUTOHSCROLL
+    RTEXT           "Contract:",IDC_STATIC,23,106,38,8
+    EDITTEXT        IDC_CONTRACTBOX,65,102,68,14,ES_AUTOHSCROLL
+    GROUPBOX        "Instrument Information",IDC_STATIC,7,42,135,83
+    GROUPBOX        "Instrument Depth Options",IDC_STATIC,7,129,135,71
+    COMBOBOX        IDC_COMBOBIDDEPTH,20,146,32,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOASKDEPTH,20,162,32,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Levels of Bid Depth",IDC_STATIC,61,149,63,8
+    LTEXT           "Levels of Ask Depth",IDC_STATIC,61,165,65,8
+    CONTROL         "Enable Depth",IDC_CHKENABLEDEPTH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,182,59,10
+    GROUPBOX        "Instrument Depth Data",IDC_STATIC,147,42,284,158
+    LISTBOX         IDC_BIDDEPTHLIST,153,70,134,125,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ASKDEPTHLIST,291,70,134,125,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BidDepth:",IDC_STATIC,153,58,32,8
+    LTEXT           "AskDepth:",IDC_STATIC,291,58,34,8
+    EDITTEXT        IDC_STATUSBAR,7,204,424,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER
+    CTEXT           "WARNING!",IDC_WARNING,7,7,424,15
+    CTEXT           "This sample is NOT to be used in production or during conformance testing.",IDC_STATIC,7,27,424,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "PriceUpdateDepth MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "PriceUpdateDepth"
+            VALUE "LegalCopyright", "Copyright (C) 2005"
+            VALUE "OriginalFilename", "PriceUpdateDepth.EXE"
+            VALUE "ProductName", "PriceUpdateDepth Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_TTPRICEUPDATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TTPRICEUPDATE_DIALOG DLGINIT
+BEGIN
+    IDC_COMBOBIDDEPTH, 0x403, 2, 0
+0x0030, 
+    IDC_COMBOBIDDEPTH, 0x403, 2, 0
+0x0031, 
+    IDC_COMBOBIDDEPTH, 0x403, 2, 0
+0x0032, 
+    IDC_COMBOBIDDEPTH, 0x403, 2, 0
+0x0033, 
+    IDC_COMBOBIDDEPTH, 0x403, 2, 0
+0x0034, 
+    IDC_COMBOBIDDEPTH, 0x403, 2, 0
+0x0035, 
+    IDC_COMBOASKDEPTH, 0x403, 2, 0
+0x0030, 
+    IDC_COMBOASKDEPTH, 0x403, 2, 0
+0x0031, 
+    IDC_COMBOASKDEPTH, 0x403, 2, 0
+0x0032, 
+    IDC_COMBOASKDEPTH, 0x403, 2, 0
+0x0033, 
+    IDC_COMBOASKDEPTH, 0x403, 2, 0
+0x0034, 
+    IDC_COMBOASKDEPTH, 0x403, 2, 0
+0x0035, 
+    0
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PriceUpdateDepth.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
